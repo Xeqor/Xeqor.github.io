@@ -1,9 +1,113 @@
 <!DOCTYPE html>
+
+<!-- Hi! -->
+
 <html lang="en">
 <head>
-  <title>Puzzle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body {
+            background-color: #121212;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: monospace;
+            color: white;
+        }
+
+        .topbar {
+            width: 100%;
+            background-color: black;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .topbar img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .topbar-text {
+            margin-left: 5px;
+            font-size: 30px;
+        }
+
+        .content-text, .content-title, .content-center {
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .content-center {
+            text-align: center;
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .topbar-link:hover {
+            color: lightgreen;
+        }
+
+        .easy {
+            font-size: 30px;
+            margin-left: -15px;
+            font-family: monospace;
+            color: lightgreen;
+        }
+
+        .content-title, .easy {
+            display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>hello, how did you get here lol</h1>
+    <div class="topbar">
+        <img src="puzzle_logo.png" alt="Puzzle Piece">
+        <div class="topbar-text">Xap's Website</div>
+        <a class="topbar-link" href="https://xeqor.github.io/">[Go back to main page]</a>
+    </div>
+
+    <div class="content-title">Puzzle 1</div>
+    <div class="easy">[Easy]</div>
+
+    <div class="content-text">
+        You have stumbled across a mysterious letter filled with gibberish.<br/>
+        At the top of the letter, you see this clue:<br/><br/>
+        <b>"Each letter corresponds to only one hidden letter. The hidden letter of B is I."</b>
+    </div>
+
+    <div class="content-text">
+        At the back of the letter, you find 4 encrypted English words:
+    </div>
+
+    <div class="content-center">
+        <b>
+            GAHBCCBCH<br/>
+            DFCCBCH<br/>
+            GDBCHBCH<br/>
+            FCCAAEAE
+        </b>
+    </div>
+
+    <div class="content-text">
+        Using these clues, your goal is to determine all the hidden letter and then decrypt the following word:
+    </div>
+
+    <div class="content-center">
+        <b>DAGOFCEBCH</b>
+    </div>
 </body>
+
 </html>
