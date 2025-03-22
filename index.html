@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- Hi! -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,9 +10,11 @@
     <style>
         body {
             background-color: #121212;
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
             overflow-x: hidden;
+            font-family: monospace;
+            color: white;
         }
 
         .topbar {
@@ -30,8 +34,41 @@
         .topbar-text {
             margin-left: 5px;
             font-size: 30px;
+        }
+
+        .content-text, .content-title, .content-center {
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .content-center {
+            text-align: center;
+        }
+
+        .hyperlink {
+            margin-left: -20px;
+            padding: -30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .hyperlink:hover {
+            color: lightgreen;
+        }
+
+        .easy {
+            font-size: 30px;
+            margin-left: -15px;
             font-family: monospace;
-            color:white;
+            color: lightgreen;
+        }
+
+        .content-title, .easy {
+            display: inline-block;
         }
     </style>
 </head>
@@ -41,6 +78,11 @@
         <img src="puzzle_logo.png" alt="Puzzle Piece">
         <div class="topbar-text">Xap's Website</div>
     </div>
+
+    <div class="content-title">
+        <b>Puzzles</b><br/>
+        Puzzle 1: </div>
+    <a class="hyperlink" href="https://xeqor.github.io/puzzle1">[Go]</a>
 </body>
 
 </html>
