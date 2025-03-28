@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<!-- Hi! -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body {
+            background-color: #121212;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: monospace;
+            color: white;
+        }
+
+        .topbar {
+            width: 100%;
+            background-color: black;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .topbar img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .topbar-text {
+            margin-left: 5px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content-text, .content-title, .content-center, .hidden-text {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-left: 50px;
+            margin-top: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-center {
+            text-align: center;
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .topbar-link:hover {
+            color: lightgreen;
+        }
+
+        .diff {
+            font-size: 30px;
+            margin-left: -15px;
+            font-family: monospace;
+            color: #fffd8d;
+        }
+
+        .content-title, .diff {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <img src="../../puzzle_logo.png" alt="Puzzle Piece">
+        <div class="topbar-text">Xap's Website</div>
+        <a class="topbar-link" href="https://xeqor.github.io/">[Go back to main page]</a>
+    </div>
+
+    <div class="content-title">Puzzle 1</div><div class="diff">[Medium]</div>
+
+    <div class="content-text">
+        <b>Warning: This contains spoiler to the solution of Puzzle 1.</b><br/>
+        Press the button if you want to proceed.
+    </div>
+
+    <div>
+        <input type="checkbox" class="toggle" id="toggle" style="display: none">
+        <label class="toggle-label" for="toggle">▼ View Solution ▼</label>
+        <div class="hidden-text">
+            <div class="content-text">
+                First, a very important clue to note is that it tells us B's hidden letter is I. 
+            </div>
+
+            <div class="content-center">
+                <b>
+                    GAH<span style="color: red">I</span>CC<span style="color: red">I</span>CH<br/>
+                    DFCC<span style="color: red">I</span>CH<br/>
+                    GD<span style="color: red">I</span>CH<span style="color: red">I</span>CH<br/>
+                    FCCAAEAE<br/>
+                    DAGIFCE<span style="color: red">I</span>CH
+                </b>
+            </div>
+
+            <div class="content-text">
+                From here, we can notice that there are a lot of words that ends with the letters <b><span style="color: red">I</span>CH</b>.<br/>
+                Could this be a common suffix?
+                There are a lot of 3 letter suffixes though, for example: -ing, -ion, -ize, -ian, -ide, etc.<br/><br/>
+                We can remove some possibilities by noticing the word <b>GD<span style="color: red">I</span>CH<span style="color: red">I</span>CH</b>.<br/>
+                It ends with two <b><span style="color: red">I</span>CH</b>'s. There are not (or very rarely) any English words that ends with 'ionion', 'izeize', 'ianian' etc.<br/><br/>
+                So, we can see that <b><span style="color: red">I</span>CH</b> have a high chance to be the prefix <b><span style="color: red">ING</span></b>. Besides, it is also a really common suffix in English words.<br/>
+            </div>
+
+            <div class="content-center">
+                <b>
+                    GA<span style="color: red">GINNING</span><br/>
+                    DF<span style="color: red">NNING</span><br/>
+                    GD<span style="color: red">INGING</span><br/>
+                    F<span style="color: red">NN</span>AAEAE<br/>
+                    DAGIF<span style="color: red">N</span>E<span style="color: red">ING</span>
+                </b>
+            </div>
+
+            <div class="content-text">
+                Notice the word <b>GA<span style="color: red">GINNING</span></b>. There is only one 9-letter word that ends with <b><span style="color: red">GINNING</span></b>, and that is the word <b><span style="color: red">BEGINNING</span></b>.<br/>
+                So, we can deduce that <b>GA</b> is <b><span style="color: red">BE</span></b>:
+            </div>
+
+            <div class="content-center">
+                <b>
+                    <span style="color: red">BEGINNING</span><br/>
+                    DF<span style="color: red">NNING</span><br/>
+                    <span style="color: red">B</span>D<span style="color: red">INGING</span><br/>
+                    F<span style="color: red">NNEE</span>E<span style="color: red">E</span>E<br/>
+                    D<span style="color: red">EB</span>IF<span style="color: red">N</span>E<span style="color: red">ING</span>
+                </b>
+            </div>
+
+            <div class="content-text">
+                From <b>F<span style="color: red">NNEE</span>E<span style="color: red">E</span>E</b>, we can see that <b>E</b> is <b><span style="color: red">D</span></b>.<br/>
+                Hence, the word will become <b>F<span style="color: red">NNEEDED</span></b>.<br/>
+                And now we can know that <b>F</b> means <b><span style="color: red">U</span></b>. This will finally become the word <b><span style="color: red">UNNEEDED</b>.<br/><br/>
+                From <b><span style="color: red">B</span>D<span style="color: red">INGING</span></b>, there are two possibilities for the letter <b>D</b>: It can be either <b><span style="color: red">R</span></b> for <b><span style="color: red">BRINGING</span></b> or <b><span style="color: red">L</span></b> for <b><span style="color: red">BLINGING</span></b>.<br/>
+                But the possibility for <b>D</b> being <b><span style="color: red">L</span></b> is low, due to the word <b>D<span style="color: red">EB</span>IF<span style="color: red">N</span>E<span style="color: red">ING</span></b> will now start with <b><span style="color: red">LEB</span></b>.<br/>
+                As additional evidence, the only 10-letter word that starts with <b><span style="color: red">LEB</span></b> is <b><span style="color: red">LEBENSRAUM</span></b>, which does not fit with our description.<br/>
+                So, <b>D</b> is <b><span style="color: red">R</span></b>.
+            </div>
+
+            <div class="content-center">
+                <b>
+                    <span style="color: red">BEGINNING</span><br/>
+                    <span style="color: red">RUNNING</span><br/>
+                    <span style="color: red">BRINGING</span><br/>
+                    <span style="color: red">UNNEEDED</span><br/>
+                    <span style="color: red">REB</span>I<span style="color: red">UNDING</span>
+                </b>
+            </div>
+
+            <div class="content-text">
+                Finally, we can just see that <b>I</b> is <b><span style="color: red">O</span></b>.<br/>
+                The hidden word will now be <b><span style="color: red">REBOUNDING</span></b>, and that is our final answer.
+            </div>
+
+            <div class="content-center">
+                <b>
+                    <span style="color: red">BEGINNING</span><br/>
+                    <span style="color: red">RUNNING</span><br/>
+                    <span style="color: red">BRINGING</span><br/>
+                    <span style="color: red">UNNEEDED</span><br/>
+                    <span style="color: red">REBOUNDING</span>
+                </b>
+            </div>
+
+            <br/><br/><br/>
+        </div>
+    </div>
+</body>
+
+</html>
