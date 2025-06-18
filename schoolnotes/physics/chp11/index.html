@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+  <title>Xap's Notes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      font-family: monospace;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: black;
+    }
+
+    .topbar img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .topbar-text {
+      font-size: 24px;
+      margin-left: 12px;
+    }
+
+    .content {
+      padding: 25px;
+      padding-bottom: 0px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 768px) {
+      .topbar-text {
+        font-size: 30px;
+      }
+
+      .content {
+        font-size: 30px;
+      }
+    }
+
+    .topbar-link {
+        margin-left: 15px;
+        padding-bottom: 0px;
+        font-size: 25px;
+        text-decoration: none;
+        color: lightblue;
+    }
+
+    .toggle-label {
+        cursor: pointer;
+        background: white;
+        color: black;
+        margin-top: 25px;
+        margin-left: 30px;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    .toggle-label:hover {
+        background: darkgray;
+    }
+
+    .content-text, .content-title, .content-center {
+        color: white;
+        margin-left: 10px;
+        padding: 30px;
+        padding-bottom: 0px;
+        font-size: 30px;
+    }
+
+    .hidden-text {
+        display: none;
+        color: lightgrey;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .toggle:checked ~ .hidden-text {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xapschoolnotes.github.io/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Physics</u></b><br/>
+        <b>Chapter 11: Fluid Mechanics</b><br/><br/>
+        <u>Motivation</u><br/>
+        Fluid mechanics is a branch of physics that deals with behavior of fluids and the forces acting on them.<br/><br/>
+        <u>Introduction</u><br/>
+        <b>Fluid</b> is basically a substance, as a <span style="color: red"><b>liquid</b></span> or <span style="color: red"><b>gas</b></span>, that can flow and change it's shape.<br/>
+        - A <span style="color: red"><b>liquid</b></span> is a fluid that has a definite volume but no definite shape.<br/>
+        - A <span style="color: red"><b>gas</b></span> is a fluid that has neither a definite volume nor a definite shape.<br/><br/>
+
+        <u>Pressure</u><br/>
+        A simply analogy for the pressure formula is:<br/>
+        A nail can stab into wood, but your finger can't even with the same force?<br/>
+        And why won't the nail work if you press it too gently?<br/>
+        You have discovered <b>pressure</b>, it is defined as <b></b>force applied per unit area</b>: <b>\( P = \frac{F}{A} \)</b><br/>
+        (P = pressure (Pa), F = force (N), A = area (m²))<br/><br/>
+
+        <u>Static pressure of a fluid</u><br/>
+        <b>\( P = h \rho g \)</b> (derivation below)<br/>
+        (P = pressure (Pa), h = height (m), \( \rho \) = density (kg/m³), g = 9.81 m/s²)<br/>
+    </div>
+  
+    <input type="checkbox" class="toggle" id="toggle" style="display: none">
+    <label class="toggle-label" for="toggle">Derivation ▼</label>
+    <div class="hidden-text">
+        <div class="content">
+            Assume a column of fluid with height \( h \), density \( \rho \), and cross-sectional area \( A \).<br/>
+            The weight of the fluid is:<br/>
+            \( F = m \cdot g = (\rho \cdot V)g = (\rho \cdot A \cdot h)g \)<br/><br/>
+
+            Plug into \( P = \frac{F}{A} \):<br/>
+            \( P = \frac{\rho A h g}{A} \)<br/>
+            <b>\( \therefore  P = h \rho g \)</b>
+        </div>
+    </div>
+
+    <div class="content">
+        If atmospheric pressure is included, the equation becomes:<br/>
+        <b>\( P = P_0 + h \rho g \)</b>.<br/>
+        (P_0 = atmospheric pressure (Pa))<br/><br/>
+
+        <u>Pascal's law</u><br/>
+
+        To easier understand Pascal's law, look at the beautiful diagram below:<br/>
+        <img src="pascal_law_diagram.png" style="width: 500px;"><br/>
+        Pascal's law states that for a fluid at rest in a closed container, a pressure change in one part is transmitted without loss to the other side.<br/>
+        To simply put, <b>if you push down all the fluid in the left side on the diagram, it will appear same amount of fluid on the right.</b><br/><br/>
+        
+        Formula for Pascal's law is: <b>\( \frac{F_1}{A_1} = \frac{F_2}{A_2} \)</b>.<br/>
+        (\(F_1\) and \(F_2\) = force applied on left and right respectively (N), \(A_1\) and \(A_2\) = area of left and right respectively (m²))<br/><br/>
+
+        <u><b>Bernoulli's Equation</b></u><br/>
+        Bernoulli's equation simply put is the <b>conversation of energy</b> formula for fluids.<br/>
+        It's a pretty important equation, as it pretty much combines all the formula before and sums it into one formula.<br/><br/>
+
+        The formula for bernoulli's equation is:<br/>
+        <b>\(P + \frac{1}{2} \rho v^2 + \rho g h = \text{constant}\)</b><br/>
+        (\( P \) = pressure (Pa), \( h \) = height (m), \( \rho \) = density (kg/m³), \( v \) = velocity (m/s), \( g \) = 9.81 m/s²)<br/><br/>
+
+        <b style="font-size: 32px;">That's all, now go practice question on book 🔥🔥</b>
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
