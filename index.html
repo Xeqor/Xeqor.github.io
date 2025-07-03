@@ -1,82 +1,112 @@
 <!DOCTYPE html>
+
+<!-- Hi! -->
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Xap's Notes</title>
-    <link rel="icon" href="school_notes_logo_updated.png" type="image/png" />
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
             background-color: #121212;
-            color: white;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
             font-family: monospace;
+            color: white;
         }
 
         .topbar {
+            width: 100%;
+            background-color: black;
+            height: 75px;
             display: flex;
             align-items: center;
-            padding: 16px;
-            background-color: black;
+            padding-left: 20px;
         }
 
         .topbar img {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
         }
 
         .topbar-text {
-            font-size: 20px;
-            margin-left: 12px;
+            margin-left: 5px;
+            font-size: 30px;
         }
 
-        .content {
-            padding: 25px;
-            font-size: 18px;
-            line-height: 1.4;
+        .content-text, .content-title, .content-center {
+            display: inline;
+            margin-left: 10px;
+            margin-top: 0px;
+            padding: 30px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+            padding-right: 20px;
+            font-size: 30px;
         }
 
-        @media (min-width: 768px) {
-            .topbar-text {
-                font-size: 30px;
-            }
-
-            .content {
-                font-size: 30px;
-            }
+        .content-center {
+            text-align: center;
         }
 
-        .link {
-            color: lightblue;
+        .hyperlink {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            margin-left: -20px;
+            margin-top: -20px;
+            padding-bottom: 0px;
+            font-size: 30px;
             text-decoration: none;
+            color: lightblue;
+        }
+
+        .hyperlink:hover {
+            color: lightgreen;
+        }
+
+        .diff {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            margin-left: -15px;
+            margin-right: -50px;
+            font-family: monospace;
+            color: #fffd8d;
+        }
+
+        .content-title, .diff {
+            display: inline-block;
         }
     </style>
 </head>
+
 <body>
-  <div class="topbar">
-    <img src="school_notes_logo_updated.png" alt="School Notes Logo"/>
-    <div class="topbar-text">Xap's School Notes</div>
-  </div>
+    <div class="topbar">
+        <img src="puzzle_logo.png" alt="Puzzle Piece">
+        <div class="topbar-text">Xap's Website</div>
+    </div>
 
-  <div class="content">
-    There isn't much content yet, more will be added soon.<br/><br/>
-
-    <b><u>Math</u></b><br/>
-    - TBA<br/>
+    <div class="content-title">
+        <b>Puzzles</b>
+    </div>
     <br/>
-
-    <b><u>Physics</u></b><br/>
-    - Chp 11 Fluid Mechanics <a class="link" href="https://xeqor.github.io/schoolnotes/physics/chp11/index.html">[Go]</a><br/><br/>
-
-    <b><u>Chemistry</u></b><br/>
-    - Chp 20 Rate of chemical reactions <a class="link" href="https://xeqor.github.io/schoolnotes/chemistry/chp20/index.html">[Go]</a><br/><br/>
-
-    <b><u>Random stuffs (bruh)</u></b><br/>
-
-    - TBA<br/>
-  </div>
+    <div class="content-title">
+        Puzzle 1
+    </div>
+    <div class="diff">[Medium]</div>
+    <div class="content-title">
+        : 
+    </div>
+    <a class="hyperlink" href="https://xeqor.github.io/puzzles/puzzle1">[Go]</a>
+    <br/>
+    <div class="content-title">
+        Solution:
+    </div>
+    <a class="hyperlink" href="https://xeqor.github.io/solutions/puzzle1">[Go]</a>
 </body>
+
 </html>
