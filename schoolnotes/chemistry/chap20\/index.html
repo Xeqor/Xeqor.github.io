@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_updated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chemistry</u></b><br/>
+        <b>Chapter 20: Rate of chemical reactions</b><br/><br/>
+
+        Chemical reaction not only forms new substances, but it also involves <b>energy changes</b>.<br/>
+        Different chemical reactions have different rates, and the degree of reaction (how much the reactants is actually used) is also different.
+        This chapter focuses on two main aspects: <b>reaction rate and reaction extent</b> (basically means how much a chemical reaction has progressed).
+
+        <br/><br/>
+
+        <b>20.1 Significance of chemical reaction rate and its expression</b><br/>
+        <i style="color: grey">There are many chemical changes in nature, production and life, and their speed is different.
+        For example: the explosion of fireworks is completed almost instantly, but rust of steel may take a week to see, some reactions even take years or longer to form.</i><br/><br/>
+
+        The study of the rate of chemical reactions can help slow down unfavorable reactions and speed up favorable reactions. For example, iron rusting can be slowed down by painting it.<br/><br/>
+       
+        The 'speed' of a chemical reaction is called <b>the rate of reaction</b>.<br/><br/>
+        The rate of reaction is defined as: <b>\(\frac{\Delta concentration}{\Delta time}\)</b>. In here, \(\Delta concentration= final\ concentration-\ initial\ concentration\).<br/>
+        <b>(!) Recall that the formula for concentration is \(\frac{moles\ of\ substance}{volume}\)</b>.<br/><br/>
+        You can determine the rate of reaction by either the decrease in concentration of reactants or the increase in concentration of products per unit time.<br/>
+        The unit time can be \(s\), \(min\) or \(h\), and the unit for concentration is \(mol L^{-1}\). So, the unit for rate of reaction can be this for example: \(mol L^{-1} s^{-1}\).<br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>(!) We use the symbol \(R\) to represent the <u>average reaction rate</u> from \(t_1\) to \(t_2\), or any given period of time.</b><br/>
+        <b>(!) The notation \([A]_i\) will represent the concentration of \(A\) in \(t_i\).</b><br/><br/>
+
+        For example, for the reaction \(aA + bB \rightarrow cC\), the average reaction rate for reactant A can be expressed as:<br/>
+        \[R_A = -\frac{\Delta [A]}{\Delta t} = -\frac{[A]_2 - [A]_1}{t_2 - t_1}\]
+        
+        <b>(!) Please note that for reactants, the reaction rate will be negative, since it's decreasing over time.</b><br/><br/>
+
+        Likewise, the average reaction rate for product C can be expressed as:<br/>
+        \[R_C = \frac{\Delta [C]}{\Delta t} = \frac{[C]_2 - [C]_1}{t_2 - t_1}\]
+
+        After some experiments, you will find that the average reaction rate for reactants A, B and product C are actually related to each other:
+        \[-\frac{R_A}{a} = -\frac{R_B}{b} = \frac{R_C}{c}\]
+
+        This means that, the average reaction rate for reactants and products are proportional to their coefficients in the balanced chemical equation.<br/>
+        <b>When you have the average reaction rate for one of the substances, you can calculate the average reaction rate for the others using this relationship.</b> 
+        This is very useful for exam questions.<br/><br/>
+
+        <b>20.2 Factors affecting the rate of chemical reaction</b><br/>
+        <i style="color: grey">Many phenomena in production and life contain certain chemical principles. Why do you keep food in the refrigerator? Why can blowing air
+        into the stove make the fire more vigorous? Why do flour mills prohibit fireworks and smoking?</i><br/><br/>
+        The rate of chemical reaction is affected by many factors, such as temperature, concentration, pressure, surface area and catalyst.<br/>
+        But, the main factor affecting the rate is still the nature (properties) of the reactants. For example, the rate of reaction involving covalent compounds
+        are much slower than the rate of reaction involving ionic compounds.<br/>
+        And also the rate of reaction among inorganic compounds are much faster than organic compounds,
+        because inorganic compounds' bonds usually have simpler structures than organic compounds.<br/><br/>
+
+        <b>20.2.1 Nature of reactants and surface area of reactants</b><br/>
+        <i style="color: grey">Put a sugar cube and powdered sugar in two different glasses of water. From your experience, which one dissolves faster?</i><br/><br/>
+
+        If the reactants is solid, then the reacting particles can only meet at the surface of the solid.<br/>
+        This is why the greater the surface area of the solid, the faster the reaction rate.<br/>
+        Smaller particles like powders have a much greater surface area than large lumps. So powders will react much faster than lumps.<br/><br/>
+
+        <b>20.2.2 Concentration of reactants and reaction rate</b><br/><br/>
+
+        For many reactions, increasing the concentration of reactants will increase the reaction rate.<br/>
+        For example, if the iron wire is heated in the air, the iron wire can only become red hot,
+        while the iron wire is ignited in a gas cylinder filled with oxygen, it will burn vigorously.<br/>
+        This shows that the reaction rate is related to the concentration of reactants.<br/><br/>
+
+        - <b><u>Collision theory</u></b><br/><br/>
+
+        According to collision theory, molecules must collide with each other to react (not all collision lead to a reaction though).<br/>
+        A collision that creates a reaction is called an <b>effective collision</b>.<br/>
+        The greater the number of effective collisions, the greater the rate of reaction.<br/>
+        When concentration of reactants increase, the frequency of collisions also increase, leading to an increase in the rate of reaction.<br/>
+        Hence, increasing the concentration of reactants will increase the rate of reaction.<br/><br/>
+
+        <b>To achieve effective collision</b>, there are two conditions:<br/>
+        <b>(1)</b> The colliding particles must have sufficient energy to overcome the activation energy barrier.<br/>
+        <b>(2)</b> The colliding particles must be in the correct orientation.<br/><br/>
+        You can look at the diagram below to understand it better:<br/><br/>
+
+        <img src="collision_theory.png" alt="Collision Theory" style="width: 50%;"><br/><br/>
+
+        I will add more tomorrow 🔥
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
