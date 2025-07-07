@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_updated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chapter 17: Gases</u></b><br/>
+        <b><u>Questions (with solutions!)</u></b><br/><br/>
+
+        <b style="color: red">NOTE: Solutions are wrote by ChatGPT.</b><br/>
+        <b style="color: red">This means that the solution MAY be wrong (or I wrote the questions wrong for ChatGPT), but you can definitely use this for reference.</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>1. 0.1 mol of metal M reacts completely with 1.68 dm³ of oxygen gas at STP. What is the molecular formula of the oxide formed?</b><br/>
+        A. M<sub>3</sub>O<sub>4</sub> &nbsp;&nbsp; B. M<sub>2</sub>O<sub>3</sub> &nbsp;&nbsp; C. M<sub>2</sub>O &nbsp;&nbsp; D. MO<br/><br/>
+
+        <b>Solution:</b><br/>
+        At STP, 1 mol of gas = 22.4 dm³<br/>
+        \[
+        \text{Moles of } O_2 = \frac{1.68}{22.4} = 0.075 \text{ mol}
+        \]<br/>
+        Each O<sub>2</sub> molecule gives 2 O atoms:<br/>
+        \[
+        0.075 \text{ mol } O_2 \times 2 = 0.15 \text{ mol O atoms}
+        \]<br/>
+        Given: 0.1 mol of M<br/>
+        Ratio M : O = 0.1 : 0.15 → simplify:<br/>
+        \[
+        \frac{0.1}{0.05} : \frac{0.15}{0.05} = 2 : 3
+        \]<br/>
+        Empirical formula is M<sub>2</sub>O<sub>3</sub><br/>
+        <b>Answer: B. M<sub>2</sub>O<sub>3</sub></b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>2. At room temperature, 1 dm³ of ammonia at 1 atm and 1 dm³ of hydrogen chloride at 2 atm are introduced into a 2 dm³ vessel. What is the total pressure of the gases in the vessel?</b><br/>
+        A. 0.5 atm &nbsp;&nbsp; B. 1 atm &nbsp;&nbsp; C. 1.5 atm &nbsp;&nbsp; D. 3 atm<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Boyle's Law: \( P_1V_1 = P_2V_2 \)<br/>
+        For NH<sub>3</sub>:<br/>
+        \[
+        P_{NH3} = \frac{1 \times 1}{2} = 0.5 \text{ atm}
+        \]<br/>
+        For HCl:<br/>
+        \[
+        P_{HCl}= \frac{2 \times 1}{2} = 1 \text{ atm}
+        \]<br/>
+        Total pressure = 0.5 + 1 = 1.5 atm<br/>
+        <b>Answer: C. 1.5 atm</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>3. It takes 8 seconds to diffuse 80 cm³ of oxygen through a small hole. Under the same conditions, 40 cm³ of gas K takes 10 seconds to diffuse. What is the molecular weight of gas K?</b><br/>
+        A. 20.48 &nbsp;&nbsp; B. 80 &nbsp;&nbsp; C. 200 &nbsp;&nbsp; D. 250<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Graham's Law:<br/>
+        \[
+        \frac{r_1}{r_2} = \sqrt{\frac{M_2}{M_1}}
+        \]<br/>
+        Rate of O<sub>2</sub>: \( \frac{80}{8} = 10 \text{ cm³/s} \)<br/>
+        Rate of K: \( \frac{40}{10} = 4 \text{ cm³/s} \)<br/>
+        \[
+        \frac{10}{4} = \sqrt{\frac{M_K}{32}} \Rightarrow 2.5 = \sqrt{\frac{M_K}{32}}
+        \]<br/>
+        Square both sides:<br/>
+        \[
+        6.25 = \frac{M_K}{32} \Rightarrow M_K = 6.25 \times 32 = 200
+        \]<br/>
+        <b>Answer: C. 200</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>4. Which of the following represents 1 mole of a substance?</b><br/>
+        I. 8 g of carbon<br/>
+        II. 16 g of sulfur<br/>
+        III. 32 g of oxygen<br/>
+        IV. 22.4 dm³ of oxygen at STP<br/>
+        V. \( 6.023 \times 10^{23} \) helium molecules<br/>
+        A. III, V  B. I, II, IV  C. II, III, V  D. III, IV, V<br/><br/>
+
+        <b>Answer:</b><br/>
+        - 8 g of carbon (C = 12) → \( \frac{8}{12} = 0.67 \) mol → not 1 mol<br/>
+        - 16 g of sulfur (S = 32) → \( \frac{16}{32} = 0.5 \) mol → not 1 mol<br/>
+        - 32 g of O₂ → 1 mol ✅<br/>
+        - 22.4 dm³ of oxygen gas at STP = 1 mol ✅<br/>
+        - \( 6.023 \times 10^{23} \) helium atoms = 1 mol ✅<br/>
+        <b>Answer: D. III, IV, V</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>5. The relative molecular masses of gases A and B are 2 and 50 respectively. Under the same conditions, gas A diffuses at a rate of ___ times that of gas B.</b><br/>
+        A. \(\frac{1}{25}\)  B. 5  C. 25  D. 100<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Graham's Law:<br/>
+        \[
+        \frac{r_A}{r_B} = \sqrt{ \frac{M_B}{M_A} } = \sqrt{ \frac{50}{2} } = \sqrt{25} = 5
+        \]<br/><br/>
+        <b>Answer: B. 5</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>6. Which of the following statements about the kinetic molecular theory of gases is correct?</b><br/>
+        I. The number of gas molecules increases when the temperature increases<br/>
+        II. In a spherical container, gas molecules move curvilinearly<br/>
+        III. At room temperature, all gases can be liquefied<br/>
+        IV. At constant temperature, gas pressure is inversely proportional to its volume<br/>
+        V. As the absolute temperature increases, the average kinetic energy of gas molecules increases<br/>
+        A. I, IV  B. IV, V  C. II, III, V  D. II, III, IV, V<br/><br/>
+
+        <b>Answer:</b><br/>
+        I. ❌ Number of molecules doesn't increase with temp (only kinetic energy does)<br/>
+        II. ❌ Molecules move in straight lines (not curves)<br/>
+        III. ❌ Not all gases can be liquefied at room temperature<br/>
+        IV. ✅ Boyle's Law<br/>
+        V. ✅ Kinetic energy ∝ absolute temperature<br/>
+        <b>Answer: B. IV, V</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>7. A container is filled with a certain mass of gas. If the volume is decreased at constant temperature, which of the following will NOT be affected?</b><br/>
+        I. The pressure in the container<br/>
+        II. The speed of the molecules<br/>
+        III. The average kinetic energy of the molecules<br/>
+        IV. The frequency of collisions with the container wall<br/>
+        A. III  B. I, IV  C. II, III  D. II, IV<br/><br/>
+
+        <b>Answer:</b><br/>
+        I. ✅ Affected (pressure increases)<br/>
+        II. ❌ Speed depends on temperature (not affected if temp constant)<br/>
+        III. ✅ Kinetic energy depends only on temp → not affected<br/>
+        IV. ✅ Collisions increase when volume decreases<br/>
+        <b>Answer: A. III</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>8. Under the same temperature and pressure, the ratio of the volume of O₂ to that of CO₂ (same mass) would be ___</b><br/>
+        A. 8:11  B. 5:6  C. 11:8  D. 11:4<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let mass = m<br/>
+        Molar mass of O₂ = 32, CO₂ = 44<br/>
+        Moles = mass / molar mass → volume ∝ moles<br/>
+        So:  
+        \[
+        \text{Volume ratio} = \frac{m/32}{m/44} = \frac{44}{32} = \frac{11}{8}
+        \]<br/>
+        <b>Answer: C. 11:8</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>9. Under the same temperature and pressure, two gases have the same volume. They surely ___.</b><br/>
+        I React with each other in the same volume<br/>
+        II Contain the same number of molecules<br/>
+        III Contain the same number of atoms<br/>
+        IV Have the same number of moles<br/>
+        A. I, II  B. I, III  C. II, IV  D. III, IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        At same temperature and pressure, equal volumes of gases contain equal number of molecules (Avogadro's Law).<br/>
+        II. ✅ True (Avogadro's Law)<br/>
+        IV. ✅ True (since mole = number of molecules / Avogadro constant)<br/>
+        I and III ❌ Not always true<br/>
+        <b>Answer: C. II, IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>10. Under the same temperature and pressure, 100 mL of P₂ combines with 50 mL of Q₂ to form 100 mL of R. What is the molecular formula of R?</b><br/>
+        A. PQ  B. PQ₂  C. P₂Q  D. P₂Q₂<br/><br/>
+
+        <b>Solution:</b><br/>
+        Volume ratio:  <br/>
+        P₂ : Q₂ : R = 100 : 50 : 100 = 2 : 1 : 2  <br/>
+        Thus 2 vol P₂ + 1 vol Q₂ → 2 vol R  <br/>
+        This gives molecular formula: P₂Q<br/>
+        <b>Answer: C. P₂Q</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>11. When 5 g of impure zinc powder reacts with excess hydrochloric acid, 1500 cm³ of hydrogen gas is collected at STP. What is the purity of the zinc powder?</b><br/>
+        A. 43.5%  B. 66.9%  C. 74.7%  D. 87.1%<br/><br/>
+
+        <b>Solution:</b><br/>
+        STP: 1 mol gas = 22400 cm³  
+        \[
+        n(H_2) = \frac{1500}{22400} = 0.06696 \text{ mol}
+        \]  
+        From Zn + 2HCl → ZnCl₂ + H₂,  
+        1 mol Zn → 1 mol H₂  
+        \[
+        \text{Mass of Zn reacted} = 0.06696 \times 65.38 = 4.37 \text{ g}
+        \]  
+        \[
+        \text{Purity} = \frac{4.37}{5.00} \times 100\% = 87.4\%
+        \]  
+        Closest option: 87.1%<br/>  
+        (This question may be poorly designed OR just outdated. The more accurate answer should be 87.56%.)<br/>  
+        <b>Answer: D. 87.1%</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>12. Which of the following has the most number of atoms at room temperature and pressure?</b><br/>
+        A. 7 g of hydrogen<br/>
+        B. 3 mol of ammonia gas<br/>
+        C. 2 mol of nitrogen gas<br/>
+        D. 88 dm³ of carbon dioxide<br/><br/>
+
+        <b>Solution:</b><br/>
+        A. 7 g H₂ = 3.5 mol H₂ → 3.5 × 2 = 7 mol atoms <br/> 
+        B. 3 mol NH₃ → 3 × (1 N + 3 H) = 3 × 4 = 12 mol atoms  <br/>
+        C. 2 mol N₂ → 4 mol atoms  <br/>
+        D. 88 dm³ CO₂ at RTP = 88 / 24 = 3.67 mol → 3.67 × 3 = 11 mol atoms  <br/>
+        Most atoms = option B (12 mol atoms)<br/> 
+        <b>Answer: B. 3 mol of ammonia gas</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>13. Which of the following substances contains the most number of atoms?</b><br/>
+        A. 4 g of hydrogen gas<br/>
+        B. 18 mL water at 4 °C<br/>
+        C. 22.4 L helium gas at STP<br/>
+        D. 11.2 L oxygen gas at STP<br/><br/>
+
+        <b>Solution:</b><br/>
+        A. H₂: 4 g → 2 mol → 4 mol atoms  <br/>
+        B. Water: 18 mL = 18 g = 1 mol → 3 mol atoms  <br/>
+        C. 22.4 L He = 1 mol atoms  <br/>
+        D. 11.2 L O₂ = 0.5 mol O₂ = 1 mol atoms  <br/>
+        Most atoms = A (4 mol)  <br/>
+        <b>Answer: A. 4 g of hydrogen gas</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>14. At 27 °C and \( 2.5 \times 10^4 \) Pa, the volume of 12 g of a gas is 74.82 L. What is this gas?</b><br/>
+        A. C₂H₂  B. CH₄  C. CO₂  D. CO<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use ideal gas law:  
+        \[
+        PV = nRT \Rightarrow n = \frac{PV}{RT}
+        \]  
+        T = 27 + 273 = 300 K  
+        \[
+        n = \frac{2.5 \times 10^4 \times 74.82}{8.314 \times 300} ≈ 0.75 \text{ mol}
+        \]  
+        Molar mass = \( \frac{12}{0.75} = 16 gmol^{-1} \) → CH₄  <br/>
+        <b>Answer: B. CH₄</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>15. Under what conditions does a real gas behave most like an ideal gas?</b><br/>
+        I Near the boiling point<br/>
+        II At high temperature<br/>
+        III At low temperature<br/>
+        IV At high pressure<br/>
+        V At low pressure<br/>
+        A. I, II  B. II, V  C. III, IV  D. I, IV, V<br/><br/>
+
+        <b>Solution:</b><br/>
+        Real gases behave most ideally at high temperature and low pressure (particles far apart).  <br/>
+        I. ❌ Near boiling point → gas tends to liquefy  <br/>
+        II. ✅ High temperature → behaves more ideally  <br/>
+        V. ✅ Low pressure → less interaction<br/>
+        <b>Answer: B. II, V</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>16. A gas sample contains 10 g of neon and 8 g of oxygen. The total pressure of this gas mixture at 25 °C is 100 kPa. What is the partial pressure of oxygen?</b><br/>
+        A. 33 kPa  B. 50 kPa  C. 55 kPa  D. 67 kPa<br/><br/>
+
+        <b>Solution:</b><br/>
+        Moles of Ne = \( \frac{10}{20.18} ≈ 0.495 \) mol  <br/>
+        Moles of O₂ = \( \frac{8}{32} = 0.25 \) mol  <br/>
+        Total mol = 0.495 + 0.25 = 0.745 mol  <br/>
+        \[
+        P_{O_2} = \frac{0.25}{0.745} \times 100 = 33.56 \text{ kPa}
+        \]<br/>
+        <b>Answer: A. 33 kPa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>17. How much pressure is exerted by a mixture of 16 g of oxygen and 7 g of nitrogen in a 5 L container at 20 °C?</b><br/>
+        A. \( 7.31 \times 10^5 \) Pa<br/>
+        B. \( 3.65 \times 10^5 \) Pa<br/>
+        C. \( 4.99 \times 10^4 \) Pa<br/>
+        D. \( 1.87 \times 10^4 \) Pa<br/><br/>
+
+        <b>Solution:</b><br/>
+        O₂: 16 g → 0.5 mol  N₂: 7 g → 0.25 mol  Total mol = 0.75 mol  <br/>
+        T = 20 + 273 = 293 K  <br/>
+        Use ideal gas law:  <br/>
+        \[
+        P = \frac{nRT}{V} = \frac{0.75 \times 8.314 \times 293}{5} = 365.2 \times 10^3 \text{ Pa}
+        \]<br/>
+        <b>Answer: B. \( 3.65 \times 10^5 \) Pa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>18. Which of the following are characteristics of an ideal gas?</b><br/>
+        I No intermolecular forces<br/>
+        II No volume of molecules<br/>
+        III No mass of molecules<br/>
+        A. I, II  B. I, III  C. II, III  D. I, II, III<br/><br/>
+
+        <b>Solution:</b><br/>
+        I. ✅ Ideal gas has no intermolecular forces  <br/>
+        II. ✅ Assumes zero volume of particles  <br/>
+        III. ❌ Molecules have mass (needed for kinetic energy)<br/>
+        <b>Answer: A. I, II</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>19. Which of the following contains the greatest number of atoms?</b><br/>
+        A. 10 g of neon<br/>
+        B. 0.4 mol of oxygen<br/>
+        C. 5.4 mL of water at 4 °C<br/>
+        D. 5.6 L of carbon dioxide at STP<br/><br/>
+
+        <b>Solution:</b><br/>
+        A. Ne: 10 g / 20 = 0.5 mol atoms  <br/>
+        B. 0.4 mol O₂ = 0.8 mol atoms  <br/>
+        C. Water: 5.4 mL ≈ 0.3 mol → 0.9 mol atoms  <br/>
+        D. 5.6 L CO₂ = 0.25 mol → 0.75 mol atoms  <br/>
+        → C has most atoms<br/>
+        <b>Answer: C. 5.4 mL of water at 4 °C</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>20. A mixture of 20 cm³ oxygen and 30 cm³ hydrogen explodes and burns, forming water. What is the volume of the remaining gas?</b><br/>
+        A. 5 cm³  B. 15 cm³  C. 20 cm³  D. 30 cm³<br/><br/>
+
+        <b>Solution:</b><br/>
+        2H₂ + O₂ → 2H₂O (volume ratio 2:1)  <br/>
+        30 cm³ H₂ reacts with 15 cm³ O₂ → only 20 cm³ O₂ available  <br/>
+        O₂ is limiting → reacts with 40 cm³ H₂ → excess = 30 - 40 = -10 → can't happen  <br/>
+        H₂ is limiting → 30 cm³ H₂ needs 15 cm³ O₂  <br/>
+        Remaining O₂ = 20 - 15 = 5 cm³<br/>
+        <b>Answer: A. 5 cm³</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>21. Arrange the following gases in order of decreasing density at STP:</b><br/>
+        I. O₂<br/>
+        II. SO₂<br/>
+        III. CO₂<br/>
+        IV. NO₂<br/>
+        A. I → III → II → IV<br/>
+        B. II → IV → III → I<br/>
+        C. III → II → IV → I<br/>
+        D. IV → I → II → III<br/><br/>
+
+        <b>Solution:</b><br/>
+        Density ∝ molar mass  <br/>
+        M(O₂) = 32  CO₂ = 44  NO₂ = 46  SO₂ = 64  <br/>
+        Descending: SO₂ > NO₂ > CO₂ > O₂<br/>
+        <b>Answer: B. II → IV → III → I</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>22. A tyre took 20 minutes to deflate when filled with air (mean relative molecular mass = 28.8). How long will it take to deflate if filled with hydrogen at the same temperature and pressure?</b><br/>
+        A. \( \frac{20 \times 28.8}{2} \) min<br/>
+        B. \( 20 \times \sqrt{ \frac{28.8}{2} } \) min<br/>
+        C. \( 20 \times \sqrt{ \frac{2}{28.8} } \) min<br/>
+        D. \( \frac{20 \times 2}{28.8} \) min<br/><br/>
+
+        <b>Solution:</b><br/>
+        Rate ∝ \( \frac{1}{\sqrt{M}} \) → time ∝ \( \sqrt{M} \)<br/>
+        Let \( t_1 = 20 \), \( M_1 = 28.8 \), \( M_2 = 2 \)<br/>
+        \[
+        t_2 = 20 \times \sqrt{ \frac{28.8}{2} }
+        \]<br/>
+        <b>Answer: B. \( 20 \times \sqrt{ \frac{28.8}{2} } \) min</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>23. Two vessels of equal volume contain NO₂ gas and a mixture of N₂ and O₂ gas with equal number of moles. Under the same temperature and pressure, which of the following must be equal for the two vessels?</b><br/>
+        A. Mass<br/>
+        B. Number of moles<br/>
+        C. Total number of atoms<br/>
+        D. Total number of protons<br/><br/>
+
+        <b>Solution:</b><br/>
+        Same number of moles → same number of molecules  <br/>
+        Mass will differ due to different molar masses  <br/>
+        Atoms: NO₂ has 3 atoms/molecule; N₂ + O₂ mixture averages less  <br/>
+        Protons depend on atomic identity, not number of molecules  <br/>
+        Only number of moles is guaranteed to be equal<br/>
+        <b>Answer: B. Number of moles</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>24. A nitrogen-hydrogen mixture, initially in the mole ratio of 1:3, reaches equilibrium with ammonia when 50% of the material has reacted. If the total final pressure is P, what is the partial pressure of ammonia?</b><br/>
+        A. \( \frac{P}{3} \)  B. \( \frac{P}{4} \)  C. \( \frac{P}{6} \)  D. \( \frac{P}{8} \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        N₂ + 3H₂ ⇌ 2NH₃  <br/>
+        Initial: 1 mol N₂, 3 mol H₂  <br/>
+        50% reacted: 0.5 mol N₂ used → 1.5 mol H₂ used → 1 mol NH₃ formed  <br/>
+        Total final mol = 0.5 N₂ + 1.5 H₂ + 1 NH₃ = 3 mol  <br/>
+        \[
+        \text{Partial pressure of NH₃} = \frac{1}{3}P
+        \]<br/>
+        <b>Answer: A. \( \frac{P}{3} \)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>25. At 273 °C and \(1.01 \times 10^5\ \text{Pa}\), 1.4 g of nitrogen and 4.0 g of argon are mixed. What is the volume of this gas mixture?</b><br/>
+        A. 3.37 L  B. 4.48 L  C. 6.74 L  D. 8.96 L<br/><br/>
+
+        <b>Solution:</b><br/>
+        T = 273 + 273 = 546 K  R = 8.314  
+        \(n(N_2) = \frac{1.4}{28} = 0.05\ \text{mol}\)  <br/>
+        \(n(Ar) = \frac{4.0}{40} = 0.10\ \text{mol}\)  <br/>
+        Total n = 0.15 mol  <br/><br/>
+        Use PV = nRT:  <br/>
+        \[
+        V = \frac{nRT}{P} = \frac{0.15 \times 8.314 \times 546}{1.01 \times 10^5} ≈ 0.672\ \text{m}^3 = 6.72\ \text{L}
+        \]  
+        Closest: 6.74 L  <br/>
+        <b>Answer: C. 6.74 L</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>26. For a certain volume of gas under constant pressure, when temperature increases by 1 °C:</b><br/>
+        A. The volume remains unchanged<br/>
+        B. Volume reduces by \(\frac{1}{273}\)<br/>
+        C. Volume increases by \(\frac{1}{273}\)<br/>
+        D. Gas increases by \(\frac{1}{273}\) of its volume at 0 °C<br/><br/>
+
+        <b>Solution:</b><br/>
+        Charles’ Law: \( V \propto T \) (in K)  <br/>
+        So for every 1 °C rise (i.e. 1 K), volume increases by \( \frac{1}{273} \) of volume at 0 °C.  <br/>
+        <b>Answer: D. Gas increases by \(\frac{1}{273}\) of its volume at 0 °C</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>27. \( \text{MH}_2(g) + 2H_2O(l) → M(OH)_2(s) + 2H_2(g) \)<br/>
+        0.42 g of compound MH₂ reacted with water and 448 mL of dry hydrogen gas was liberated at STP. Calculate the relative atomic mass of M.</b><br/>
+        A. 24.3  B. 32  C. 40  D. 42<br/><br/>
+
+        <b>Solution:</b><br/>
+        At STP, 1 mol gas = 22400 mL  <br/>
+        \[
+        n(H_2) = \frac{448}{22400} = 0.02\ \text{mol}
+        \]  
+        From equation: 1 mol MH₂ → 2 mol H₂  <br/>
+        So \( n(MH_2) = \frac{0.02}{2} = 0.01 \) mol  
+        \[
+        M(MH_2) = \frac{0.42}{0.01} = 42 \Rightarrow M = 42 - 2 = 40
+        \]  
+        <b>Answer: C. 40</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>28. A, B and C are three gases in a container. The ratio of the number of molecules is A:B:C = 1:2:3. If the partial pressure of A is \(3 \times 10^4\ \text{Pa}\), which is correct?</b><br/>
+        I. Partial pressure of C is \(9 \times 10^4\ \text{Pa}\)<br/>
+        II. Total pressure is \(1.8 \times 10^5\ \text{Pa}\)<br/>
+        III. Smaller number of molecules → smaller partial pressure<br/>
+        IV. Mass of gas A is \(\frac{1}{67}\) of the total mass of gases<br/>
+        A. I, II  B. I, IV  C. III, IV  D. I, II, III<br/><br/>
+
+        <b>Solution:</b><br/>
+        Pressure ∝ number of molecules  <br/>
+        → C has 3× molecules → pressure = 3× that of A  <br/>
+        → \(P_C = 9 \times 10^4\ \text{Pa}\), \(P_B = 6 \times 10^4\ \text{Pa}\), total = \(1.8 \times 10^5\)  <br/><br/>
+        I ✅ II ✅ III ✅ IV ❌ (not enough info on molar mass)  <br/>
+        <b>Answer: D. I, II, III</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>29. A gas in a 3 L container has an original pressure of 2 kPa. It is allowed to flow into a 17 L container. What is the final pressure of the gas?</b><br/>
+        A. 0.03 kPa  B. 0.3 kPa  C. 3 kPa  D. 30 kPa<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use \(P_1V_1 = P_2V_2\)  <br/>
+        \[
+        2 \times 3 = P_2 \times (3 + 17) = P_2 \times 20  
+        \Rightarrow P_2 = \frac{6}{20} = 0.3\ \text{kPa}
+        \]  
+        <b>Answer: B. 0.3 kPa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>30. If the rate of diffusion for a monoatomic gas is one-third that of hydrogen gas, what is the relative atomic mass of the gas?</b><br/>
+        A. 4  B. 14  C. 18  D. 20<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Graham's Law of diffusion:  <br/>
+        \[
+        \frac{r_{\text{gas}}}{r_{\text{H}_2}} = \sqrt{ \frac{M_{\text{H}_2}}{M_{\text{gas}}} }
+        \]  
+        Given \( \frac{r_{\text{gas}}}{r_{\text{H}_2}} = \frac{1}{3} \), and \( M_{\text{H}_2} = 2 \):  <br/>
+        \[
+        \frac{1}{3} = \sqrt{ \frac{2}{M} } \Rightarrow \left( \frac{1}{3} \right)^2 = \frac{2}{M} \Rightarrow \frac{1}{9} = \frac{2}{M} \Rightarrow M = 18
+        \]  
+        <b>Answer: C. 18</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>31. What does 2.2 g of carbon dioxide gas contain?</b><br/>
+        A. \( 3.0 \times 10^{22} \) atoms<br/>
+        B. 0.5 mol CO₂ molecules<br/>
+        C. Same number of molecules as 2.2 g propane (C₃H₈) gas<br/>
+        D. Half the number of hydrogen atoms in 2.24 L hydrogen gas at STP<br/><br/>
+
+        <b>Solution:</b><br/>
+        M(CO₂) = 44 → moles = \( \frac{2.2}{44} = 0.05\ \text{mol} \)  <br/>
+        A. Atoms = \( 0.05 \times 3 \times 6.022 \times 10^{23} ≈ 9 \times 10^{22} \) ❌  <br/>
+        B. 0.5 mol? No, it’s 0.05 mol ❌  <br/>
+        C. Compare: M(C₃H₈) = 44 → 2.2 g = 0.05 mol → same mol → ✅  <br/>
+        D. 2.24 L H₂ = 0.1 mol → 0.2 mol atoms → CO₂ has 0.1 mol O atoms → ❌  <br/>
+        <b>Answer: C. Same number of molecules as 2.2 g propane (C₃H₈) gas</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>32. A hydrogen gas thermometer shows 100 cm³ at 0 °C. It reads 87.2 cm³ in boiling chlorine at same pressure. What is chlorine's boiling point?</b><br/>
+        A. -35 °C  B. 40 °C  C. 238 °C  D. 313 °C<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Charles' Law:<br/> 
+        \[
+        \frac{V_1}{T_1} = \frac{V_2}{T_2} \Rightarrow \frac{100}{273} = \frac{87.2}{T} \Rightarrow T = \frac{87.2 \times 273}{100} ≈ 238.26\ \text{K}
+        \]  
+        \[
+        T = 238.26 - 273 = -34.7\ ^\circ\text{C}
+        \]  
+        <b>Answer: A. -35 °C</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>33. 3.172 g of metal M reacts at 20 °C and 1.01×10⁵ Pa with 0.6015 L oxygen to form MO. Oxygen gas density = 1.328 g/L at same conditions. What is M's relative atomic mass?</b><br/>
+        A. 127  B. 63.5  C. 31.75  D. 23.07<br/><br/>
+
+        <b>Solution:</b><br/>
+        Mass of O₂ = \(0.6015 \times 1.328 = 0.798\ \text{g}\)  <br/>
+        Moles of O₂ = \( \frac{0.798}{32} = 0.02494 \) mol  <br/>
+        From MO: 1 mol O₂ reacts with 2 mol M →  <br/>
+        Moles of M = \( 2 \times 0.02494 = 0.04988 \)  <br/>
+        Molar mass = \( \frac{3.172}{0.04988} ≈ 63.6 \)  <br/>
+        <b>Answer: B. 63.5</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>34. 4.0 L methane at \(2.02 \times 10^5\) Pa, 12.5 L nitrogen at \(3.5 \times 10^5\) Pa, and 1.5 L helium at \(1.01 \times 10^5\) Pa are injected into a 10 L vessel. What is the final pressure?</b><br/>
+        A. \( 5.33 \times 10^6 \) Pa<br/>
+        B. \( 6.53 \times 10^5 \) Pa<br/>
+        C. \( 5.33 \times 10^5 \) Pa<br/>
+        D. \( 6.53 \times 10^4 \) Pa<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use Boyle’s Law: \( P_1V_1 = P_2V_2 \)  <br/>
+        Total pressure:  <br/>
+        \[
+        P = \frac{4.0 \times 2.02 \times 10^5 + 12.5 \times 3.5 \times 10^5 + 1.5 \times 1.01 \times 10^5}{10}  
+        = \frac{8.08 + 43.75 + 1.515}{10} \times 10^5 = 5.335 \times 10^5
+        \]  
+        <b>Answer: C. \( 5.33 \times 10^5 \) Pa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>35. At 27 °C and pressure 308 kPa, a gas has volume 0.162 L. Its relative molecular mass is 60. What is the mass?</b><br/>
+        A. 1.2g  B. 2.4g  C. 12g  D. 24g<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use \( PV = nRT \)  <br/>
+        T = 300 K  R = 8.314  <br/>
+        \[
+        n = \frac{PV}{RT} = \frac{308000 \times 0.000162}{8.314 \times 300} ≈ 0.020\ \text{mol}
+        \]  
+        Mass = \( 0.02 \times 60 = 1.2g \)<br/>  
+        <b>Answer: A. 1.2g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>36. There are two separated flasks containing 5 L of gas X and 10 L of gas Y respectively. The pressure of gas X is 9 Pa while the pressure of gas Y is 3 Pa. Given that gas X and gas Y do not react with each other, if the valve is opened to allow mixing, what is the total pressure of the mixture?</b><br/>
+        A. 2 Pa  B. 6 Pa  C. 5 Pa  D. 12 Pa<br/><br/>
+
+        <b>Solution:</b><br/>
+        Use total pressure = \( \frac{P_1V_1 + P_2V_2}{V_1 + V_2} \)  <br/>
+        \[
+        P = \frac{9 \times 5 + 3 \times 10}{5 + 10} = \frac{45 + 30}{15} = \frac{75}{15} = 5\ \text{Pa}
+        \]  
+        <b>Answer: C. 5 Pa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>37. Given \(P_N\) is the vapour pressure of liquid nitrogen at −T °C. Find the partial vapour pressure of nitrogen for a mixture of liquid nitrogen and oxygen at −T °C, if the mole fraction of nitrogen is \(x\).</b><br/>
+        A. \(xP_N\)<br/>
+        B. \((1 - x)P_N\)<br/>
+        C. \(\frac{x}{1 - x}P_N\)<br/>
+        D. \(\frac{1 - x}{x}P_N\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Raoult’s Law: partial vapour pressure = mole fraction × vapour pressure of pure solvent  <br/>
+        So for nitrogen:  <br/>
+        \[
+        P_{\text{N, partial}} = xP_N
+        \]  
+        <b>Answer: A. \(xP_N\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>38. When 1 mL of ice is heated to 323 °C at 1 atm (101 kPa), what is the volume of steam produced? (Density of ice = 1.0 g/mL)</b><br/>
+        A. 0.273 L  B. 1.33 L  C. 2.73 L  D. 48.0 L<br/><br/>
+
+        <b>Solution:</b><br/>
+        Mass of ice = 1 g → Moles of H₂O = \( \frac{1}{18} ≈ 0.0556 \) mol  <br/>
+        Temperature = 323 °C = 596 K  <br/>
+        Use ideal gas equation:  <br/>
+        \[
+        V = \frac{nRT}{P} = \frac{0.0556 \times 8.314 \times 596}{101000} ≈ 0.0273\ \text{m}^3 = 27.3\ \text{L}
+        \]  
+        <b>Answer: D. 48.0 L</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>39. 2.0 mol argon gas and 2.0 mol hydrogen gas are mixed in a vessel, and effuse through a small pinhole. If 0.2 mol hydrogen remains, how much argon is left?</b><br/>
+        A. 0.2 mol  B. 0.4 mol  C. 1.6 mol  D. 1.8 mol<br/><br/>
+
+        <b>Solution:</b><br/>
+        Rate of effusion ∝ \( \frac{1}{\sqrt{M}} \) <br/> 
+        Hydrogen escapes faster than argon  <br/>
+        Let remaining H₂ = 0.2 mol → 1.8 mol escaped  
+        \[
+        \frac{\text{Rate of Ar}}{\text{Rate of H}_2} = \sqrt{\frac{2}{40}} = \frac{1}{\sqrt{20}} \approx \frac{1}{4.47}
+        \]  
+        So if H₂ lost 1.8 mol, then Ar lost ≈ \( \frac{1.8}{4.47} ≈ 0.4 \) mol  <br/>
+        Remaining Ar = 2.0 − 0.4 = 1.6 mol  <br/>
+        <b>Answer: C. 1.6 mol</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>40. Which condition is closest to ideal gas behaviour?</b><br/>
+        A. CO: 0 °C, 50 atm<br/>
+        B. CO: 350 K, 0.1 atm<br/>
+        C. He: 0 °C, 50 atm<br/>
+        D. He: 350 K, 0.1 atm<br/><br/>
+
+        <b>Solution:</b><br/>
+        Ideal gas favours: low pressure, high temperature, and non-polar small molecules.  <br/>
+        → Helium is monatomic and inert  <br/>
+        → D: High temp, low pressure  <br/>
+        <b>Answer: D. He: 350 K, 0.1 atm</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>41. 40 mL CO₂ and 20 mL O₂ are in a closed container at STP. Then 150 mL H₂ is injected later. Which deduction is NOT true?</b><br/>
+        A. Total pressure increases<br/>
+        B. Partial pressure of CO₂ remains constant  <br/>
+        C. Partial pressure of O₂ increases<br/>
+        D. Partial pressure of H₂ is the highest<br/><br/>
+
+        <b>Solution:</b><br/>
+        A ✅ more gas → more pressure  <br/>
+        B ✅ CO₂ amount unchanged  <br/>
+        C ❌ O₂ unchanged → pressure unchanged  <br/>
+        D ✅ 150 mL is largest volume  <br/>
+        <b>Answer: C. Partial pressure of O₂ increases</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>42. Flask X: 2 L argon at 4 kPa. Flask Y: 3 L helium at 2 kPa. Connected at constant temp. What’s final total pressure?</b><br/>
+        A. 1.2 kPa  B. 2.8 kPa  C. 4.0 kPa  D. 6.0 kPa<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        P = \frac{P_1V_1 + P_2V_2}{V_1 + V_2} = \frac{4 \times 2 + 2 \times 3}{2 + 3} = \frac{8 + 6}{5} = 2.8\ \text{kPa}
+        \]  
+        <b>Answer: B. 2.8 kPa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>43. Under standard conditions, the volume of 1.68 g of an unknown gas was measured to be 448 mL. What is the molar mass of this gas?</b><br/>
+        A. 84 g mol⁻¹  B. 34 g mol⁻¹  C. 0.084 g mol⁻¹  D. 0.034 g mol⁻¹<br/><br/>
+
+        <b>Solution:</b><br/>
+        At STP, 1 mole of gas = 22.4 L = 22400 mL  <br/>
+        Moles = \( \frac{448}{22400} = 0.02 \) mol  <br/>
+        Molar mass = \( \frac{1.68}{0.02} = 84 \)  <br/>
+        <b>Answer: A. 84 g mol⁻¹</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>44. At specific pressure and temperature, 4 L of a gas mixture contains 66 g CO₂ and \(x\) g O₂. After passing through concentrated NaOH, the volume becomes 2.5 L. What is \(x\)?</b><br/>
+        A. 40 g  B. 60 g  C. 80 g  D. 100 g<br/><br/>
+
+        <b>Solution:</b><br/>
+        NaOH removes CO₂ → CO₂ volume = 4 L − 2.5 L = 1.5 L  <br/>
+        Moles of CO₂ = \( \frac{66}{44} = 1.5 \) mol → 1.5 L at same condition  <br/>
+        So O₂ is 2.5 L → same volume as 2.5 mol if equal conditions  <br/>
+        Mass = \( 2.5 \times 32 = 80 \) g  <br/>
+        <b>Answer: C. 80 g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        Will add more soon, perhaps<br/><br/>
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
