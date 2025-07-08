@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_Gupdated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chapter 18: Solutions and properties</u></b><br/>
+        <b><u>Questions (with solutions!)</u></b><br/><br/>
+
+        <b style="color: red">NOTE: The solutions are wrote by ChatGPT.</b><br/>
+        <b style="color: red">I am aware of the solutions may be bad/confusing (I tried to edit the ones that may be confusing). If you are still confused on any question, feel free to ask someone that's good at the topic (or ask ChatGPT for more clarification lol) or you can just skip the question for now, and come back later.</b><br/>
+        <b style="color: red">This also means that the solution MAY be wrong (or I wrote the questions wrong for ChatGPT).</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>1. At room temperature, a small amount of salt is added to a large beaker of saturated sodium nitrate solution. This salt will ___.</b><br/>
+        A. not dissolve, but the same amount of sodium nitrate will be crystallized out<br/>
+        B. dissolve, and the same amount of sodium nitrate will be crystallized out<br/>
+        C. not dissolve<br/>
+        D. dissolve<br/><br/>
+
+        <b>Solution:</b><br/>
+        In a saturated solution, dynamic equilibrium exists. <br/>
+        The added salt dissolves, while the same amount of sodium nitrate crystallizes out.<br/>
+        <b>Answer: B. dissolve, and the same amount of sodium nitrate will be crystallized out</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>2. Compound X has a solubility of 20 g per 100 g of water at 15 °C. How many grams of compound X are contained in 500 g of a saturated solution at the same temperature?</b><br/>
+        A. 20 g<br/>
+        B. 22.8 g<br/>
+        C. 83.3 g<br/>
+        D. 100 g<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let solute mass be \( x \):<br/>
+        \[
+        \frac{x}{500 - x} = \frac{20}{100}
+        \]
+        \[
+        x = 0.2(500 - x)
+        \]
+        \[
+        x = 100 - 0.2x
+        \]
+        \[
+        1.2x = 100
+        \]
+        \[
+        x = 83.3g
+        \]<br/>
+        <b>Answer: C. 83.3 g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>3. 2 g of iron (III) sulfate [\( \text{Fe}_2(\text{SO}_4)_3 \)] is dissolved in water to form 100 cm\(^3\) of aqueous solution. What is the concentration of \( \text{SO}_4^{2-} \) ions in the solution?</b><br/>
+        (Molar mass of \( \text{Fe}_2(\text{SO}_4)_3 \) = 400)<br/>
+        A. \( 5 \times 10^{-3} \) mol L\(^{-1}\)<br/>
+        B. \( 1.5 \times 10^{-3} \) mol L\(^{-1}\)<br/>
+        C. \( 5 \times 10^{-2} \) mol L\(^{-1}\)<br/>
+        D. \( 1.5 \times 10^{-1} \) mol L\(^{-1}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Volume of solution = 100 cm\(^3\) = 0.1 L<br/>
+        Moles of \( \text{Fe}_2(\text{SO}_4)_3 \):<br/>
+        \[
+        n_{\text{Fe}_2(\text{SO}_4)_3} = \frac{2}{400} = 0.005
+        \]<br/>
+        Since each \(\text{Fe}_2(\text{SO}_4)_3\) mole contain 3 moles of \(\text{SO}_4^{2-}\), moles of \(\text{SO}_4^{2-}\) is \(0.005 \times 3 = 0.015\).
+        \[
+        \text{Concentration of \(\text{SO}_4^{2-}\)} = \frac{0.015}{0.1} = 0.15
+        \]<br/>
+        <b>Answer: D. \( 1.5 \times 10^{-1} \) mol L\(^{-1}\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>4. Which of the following is the correct method for preparing 1 \(\text{dm}^3\) of 0.25 mol L\(^{-1}\) sodium hydroxide solution?</b><br/>
+        A. Dissolve 10 g of sodium hydroxide in water, then dilute it to 1 \(\text{dm}^3\)<br/>
+        B. Dissolve 10 g of sodium hydroxide in 990 g of water<br/>
+        C. Dissolve 10 g of sodium hydroxide in 960 g of water<br/>
+        D. Dissolve 10 g of sodium hydroxide in 1 \(\text{dm}^3\) of water<br/><br/>
+
+        <b>Solution:</b><br/>
+        Correct method: dissolve in small volume, then dilute to 1 \(\text{dm}^3\).<br/>
+        B, C, D adds a fixed water mass/volume, which may not result in exactly 1 \(\text{dm}^3\) due to volume expansion/contraction.
+        <b>Answer: A. Dissolve 10 g of sodium hydroxide in water, then dilute it to 1 \(\text{dm}^3\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>5. 100 cm\(^3\) of concentrated sulfuric acid with specific gravity 1.84 and 98% by mass is diluted to 1 \(\text{dm}^3\). What is the molarity of the diluted sulfuric acid?</b><br/>
+        A. 1  B. 1.84  C. 4.9  D. 9.8<br/><br/>
+
+        <b>Solution:</b><br/>
+        Mass of solution = \(100 \times 1.84 = 184\, \text{g}\)<br/>
+        Mass of pure \(\text{H}_2\text{SO}_4\) = \(184 \times 0.98 = 180.32\, \text{g}\)<br/>
+        Moles of \(\text{H}_2\text{SO}_4 = \frac{180.32}{98} \approx 1.84\)<br/>
+        Diluted to 1 dm\(^3\) → Molarity = \(\frac{1.84}{1} = 1.84\, \text{mol L}^{-1}\)<br/>
+        <b>Answer: B. 1.84</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>6. Which of the following methods can be used to double the concentration of 200 g of 10% common salt solution?</b><br/>
+        I. Adding 400 g of 25% common salt solution<br/>
+        II. Evaporating the solution to 100 g<br/>
+        III. Evaporating one half of the solvent<br/>
+        IV. Adding 20 g of common salt<br/>
+        A. I, II<br/>
+        B. I, III<br/>
+        C. II, IV<br/>
+        D. III, IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        Initial salt = \(200 \times 0.10 = 20\, \text{g}\)<br/>
+        To reach 20% concentration → final mass = \( \frac{20}{0.20} = 100\, \text{g} \)<br/>
+        II: Evaporate to 100 g → 20 g salt remains → 20% ✅<br/>
+        IV: Add 20 g salt → 40 g salt in 200 g → 20% ✅<br/>
+        <b>Answer: C. II, IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>7. When a saturated solution of potassium nitrate at 80 °C is cooled to room temperature, which of the following is correct?</b><br/>
+        I. The concentration of the solution remains unchanged<br/>
+        II. Potassium nitrate is crystallized out of the solution<br/>
+        III. The solution finally formed is a saturated solution<br/>
+        IV. The total amount of solute in the solution remains the same<br/>
+        V. The total amount of solvent in the solution remains the same<br/>
+        A. I, II, III<br/>
+        B. I, IV, V<br/>
+        C. II, III, IV<br/>
+        D. II, III, V<br/><br/>
+
+        <b>Solution:</b><br/>
+        Cooling reduces solubility → excess solute crystallizes out ✅<br/>
+        New solution at lower temp is still saturated ✅<br/>
+        Solvent remains unchanged ✅<br/>
+        Solute amount decreases (crystallization), so IV ❌<br/>
+        <b>Answer: D. II, III, V</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+       <b>8. A solubility curve shows that a substance has a solubility of 30 g per 100 g of water at 30 °C, and 60 g per 100 g of water at 60 °C. Which of the following statements is correct?</b><br/>
+        A. A saturated solution containing 800 g of solution at 60 °C contains 240 g of solute<br/>
+        B. A saturated solution containing 130 g of solution at 30 °C contains 30 g of solute<br/>
+        C. The maximum amount of solute that can dissolve in 100 g of water at 30 °C is 30 g<br/>
+        D. The solubility of the substance increases directly proportionally with temperature<br/><br/>
+
+        <b>Solution:</b><br/>
+        C is correct. It's a restatement of the solubility at 30 °C: 30 g per 100 g of water.<br/><br/>
+
+        A is wrong. 60 g of solute per 100 g water gives a solution mass of 160 g. So for 800 g solution:<br/>
+        Each 160 g contains 60 g solute → \( \frac{60}{160} \times 800 = 300\, \text{g} \), not 240 g.<br/><br/>
+
+        B is wrong. 130 g of solution does not necessarily contain 30 g solute unless you know how much water is present. If 100 g water + 30 g solute = 130 g total, then yes, but it must be explicitly stated.<br/><br/>
+
+        D is wrong. The data given looks like "directly proportional", but that's coincidental, not a proof of direct proportionality. Trick question! Also if you look at the graph of the actual question, the line is not linear (it needs to be linear for it to be 'directly proportional'), it's more of a curve.<br/><br/>
+
+        <b>Answer: C. The maximum amount of solute that can dissolve in 100 g of water at 30 °C is 30 g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>9. What is the freezing point of a solution when 0.5 mol of glucose is dissolved in 200 g of water?</b><br/>
+        (Given: \( K_f = 1.86\,^\circ\text{C kg mol}^{-1} \))<br/>
+        A. 4.65 °C  B. 0.084 °C  C. -0.084 °C  D. -4.65 °C<br/><br/>
+
+        <b>Solution:</b><br/>
+        Freezing point depression is calculated using:<br/>
+        \[
+        \Delta T_f = K_f \times m
+        \]
+        where \( m \) is molality in \(molkg^{-1}\).<br/>
+        Water mass = 200 g = 0.2 kg<br/>
+        \[
+        m = \frac{0.5\, \text{mol}}{0.2\, \text{kg}} = 2.5\, \text{mol/kg}
+        \]
+        \[
+        \Delta T_f = 1.86 \times 2.5 = 4.65^\circ\text{C}
+        \]
+        This means the freezing point is lowered by 4.65 °C from pure water’s freezing point (0 °C):<br/>
+        \[
+        T_f = 0 - 4.65 = -4.65^\circ\text{C}
+        \]<br/>
+        <b>Answer: D. -4.65 °C</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>10. 1 g of a compound is dissolved in 75 g of water. The boiling point of the solution is 100.12 °C. Find the molecular weight of the compound.</b><br/>
+        (Given: Boiling point elevation constant of water is \(0.52\,^\circ\text{C kg mol}^{-1} \))<br/>
+        A. 87  B. 76  C. 79  D. 58<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        \Delta T_b = 100.12 - 100 = 0.12\,^\circ\text{C}
+        \]
+        \[
+        \Delta T_b = K_b \times m
+        \]
+        \[
+        m = \frac{0.12}{0.52} \approx 0.2308\, \text{mol/kg}
+        \]
+        \[
+        \text{Molality} = \frac{n}{0.075\, \text{kg}} = 0.2308
+        \]
+        \[
+         n = 0.2308 \times 0.075 = 0.01731\, \text{mol}
+        \]
+        \[
+        M = \frac{\text{mass}}{\text{moles}} = \frac{1}{0.01731} \approx 57.8
+        \]
+        <b>Answer: D. 58</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>11. 57.2 g of hydrated sodium carbonate, Na\(_2\)CO\(_3\)·10H\(_2\)O (Relative molecular mass = 286), is dissolved in water to produce 1 \(\text{dm}^3\) of solution. What is the concentration of sodium ions?</b><br/>
+        A. 0.4 mol dm⁻\(^3\)<br/>
+        B. 0.2 mol dm⁻\(^3\)<br/>
+        C. 0.1 mol dm⁻\(^3\)<br/>
+        D. 0.05 mol dm⁻\(^3\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Moles of sodium carbonate:
+        \[
+        n = \frac{57.2}{286} = 0.2\ \text{mol}
+        \]
+        From the formula:
+        \[
+        \text{Na}_2\text{CO}_3 \cdot 10\text{H}_2\text{O} \rightarrow 2\ \text{Na}^+ + \text{CO}_3^{2-}
+        \]
+        Each mole of sodium carbonate gives 2 moles of Na⁺:<br/>
+        \[
+        [\text{Na}^+] = 0.2 \times 2 = 0.4\ \text{mol/dm}^3
+        \]
+        <b>Answer: A. 0.4 mol dm⁻\(^3\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>12. A 0.04 mol sample of the bromide of element M is dissolved in water and made up to 300 cm\(^3\). 15 cm\(^3\) of this solution requires 20 cm\(^3\) of 0.2 mol dm⁻\(^3\) silver nitrate solution for complete precipitation. What is the formula of this bromide?</b><br/>
+        A. MBr  B. MBr\(_2\)  C. MBr\(_4\)  D. M\(_2\)Br<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        n_{\text{AgNO}_3} = \frac{0.2 \times 20}{1000} = 0.004
+        \]
+        \[
+        \text{Moles in 300 cm}^3 = 0.004 \times \frac{300}{15} = 0.08
+        \]
+        \[
+        \text{Original sample} = 0.04\ \text{mol}
+        \]
+        \[
+        \text{Ratio of Ag to sample} = \frac{0.08}{0.04} = 2
+        \]
+        \[
+        \text{1 M gives 2 Br}^- \Rightarrow \text{MBr}_2
+        \]<br/>
+        <b>Answer: B. MBr\(_2\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>13. A saturated solution of ammonium nitrate at \( t_1^\circ \text{C} \) is cooled to \( t_2^\circ \text{C} \). What changes will occur?</b><br/>
+        I. Mass of solution II. Mass of solute III. Mass percent concentration IV. Mass of solvent<br/>
+        A. I, IV  B. II, III  C. I, II, III  D. I, II, III, IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        Cooling causes solute to crystallize<br/>
+        mass of solute ↓, solution mass ↓, concentration ↑<br/>
+        solvent mass remains constant<br/>
+        <b>Answer: C. I, II, III</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>14. After 1 mol of MgCl\(_2\) is dissolved in 500 g of water, what is the concentration of Cl⁻ in molkg\(^{-1}\)?</b><br/>
+        A. 0.002  B. 0.004  C. 2  D. 4<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        \text{MgCl}_2 \rightarrow \text{Mg}^{2+} + 2\ \text{Cl}^-
+        \]
+        \[
+        1\ \text{mol MgCl}_2 \Rightarrow 2\ \text{mol Cl}^-
+        \]
+        \[
+        \text{Mass of solvent} = 0.5\ \text{kg}
+        \]
+        \[
+        \text{Molality} = \frac{2}{0.5} = 4
+        \]<br/>
+        <b>Answer: D. 4</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>15. If the solute in an aqueous solution is a non-volatile, non-electrolyte, which of the following statements is incorrect?</b><br/>
+        A. The lower the vapour pressure, the lower the boiling point<br/>
+        B. The higher the boiling point, the lower the freezing point<br/>
+        C. Solutions with the same molality have the same boiling point<br/>
+        D. The vapour pressure of a solution is lower than that of pure water<br/><br/>
+
+        <b>Solution:</b><br/>
+        Lower vapour pressure → higher boiling point, not lower<br/>
+        So A is incorrect<br/>
+        <b>Answer: A. The lower the vapour pressure, the lower the boiling point</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>16. When 150 g of saturated potassium nitrate solution is cooled from 70 °C to 10 °C, how many grams of potassium nitrate will crystallize out?<br/>
+        (Solubility of potassium nitrate solution: 138 g/100 g water at 70 °C; 20.9 g/100 g water at 10 °C)</b><br/>
+        A. 22.7  B. 51.1  C. 73.8  D. 150<br/><br/>
+
+        <b>Solution:</b><br/>
+        At 70 °C, solubility = 138 g/100 g water → total solution = \(138 + 100 = 238\, \text{g}\)<br/>
+        So, 150 g solution contains: <br/>
+        \[
+        \frac{138}{238} \times 150 = 86.97\, \text{g KNO}_3
+        \]
+        Water in solution = \(150 - 86.97 = 63.03\, \text{g}\)<br/>
+        At 10 °C, max solubility in 63.03 g water:<br/>
+        \[
+        \frac{20.9}{100} \times 63.03 \approx 13.17\, \text{g KNO}_3 \text{ can stay dissolved}
+        \]
+        \[
+        \text{Crystallized KNO}_3 = 86.97 - 13.17 = 73.8\, \text{g}
+        \]
+        <b>Answer: C. 73.8</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>17. 200 g of organic compound X is dissolved in 3 L of water. If 3 L of diethyl ether is used to extract once, how many grams of X dissolve in the ether layer?</b><br/>
+        (Partition coefficient \( K = \frac{\text{X}_{\text{ether}}}{\text{X}_{\text{water}}} = \frac{1}{2} \))<br/>
+        A. 75  B. 66.67  C. 100  D. 133.33<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let amount in ether be \( x \), in water is \( 200 - x \)<br/>
+        \[
+        \frac{\frac{x}{3}}{\frac{200 - x}{3}} = \frac{1}{2}
+        \]
+        \[
+        \frac{x}{200 - x} = \frac{1}{2}
+        \]
+        \[
+        2x = 200 - x
+        \]
+        \[
+        3x = 200
+        \]
+        \[
+        x = 66.67
+        \]<br/>
+        <b>Answer: B. 66.67</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>18. A solution contains 12 g of compound Y in 100 mL water. Partition coefficient of Y between hexane and water is 5. What is the mass of Y in hexane after one extraction with 100 mL hexane?</b><br/>
+        A. 0.42  B. 2.4  C. 5  D. 10<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let \( x \) = mass in hexane → \( 12 - x \) in water<br/>
+        \[
+        \frac{\frac{x}{100}}{\frac{12 - x}{100}} = 5
+        \]
+        \[
+        \frac{x}{12 - x} = 5
+        \]
+        \[
+        x = \frac{5}{6} \times 12 = 10
+        \]<br/>
+        <b>Answer: D. 10</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>19. 237 g of potash alum \(( \text{K}_2\text{SO}_4 \cdot \text{Al}_2(\text{SO}_4)_3 \cdot 24\text{H}_2\text{O} )\) is dissolved to make 200 mL of solution, what is the minimum volume of 2 mol L\(^{-1}\) barium chloride solution required to precipitate all the sulfate ions present?</b><br/>
+        A. 920 mL  B. 500 mL  C. 375 mL  D. 1000 mL<br/><br/>
+        <b style="color: red">The answer choice D is changed from 125 mL from the original question to 1000 mL. I believe there is a mistake in this question (I double checked with other AIs, and they all said the answer is 1000 mL).</b><br/><br/>
+
+        <b>Solution:</b><br/>
+        Molar mass of potash alum = 474 g mol⁻¹<br/>
+        \[
+        \text{Moles of alum} = \frac{237}{474} = 0.5\, \text{mol}
+        \]
+        Each mole of alum provides 4 moles of \( \text{SO}_4^{2-} \):<br/>
+        1 from \( \text{K}_2\text{SO}_4 \)<br/>
+        3 from \( \text{Al}_2(\text{SO}_4)_3 \)<br/>
+        \[
+        \text{Total moles of } \text{SO}_4^{2-} = 0.5 \times 4 = 2.0
+        \]
+        BaCl\(_2\) reacts with sulfate ions in a 1:1 ratio:<br/>
+        \[
+        \text{Moles of BaCl}_2 \text{ required} = 2.0
+        \]
+        \[
+        V = \frac{2.0}{2} = 1.0\, \text{L} = 1000\, \text{mL}
+        \]
+        <b>Answer: D. 1000 mL</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>20. 5 g of diphenyl (C\(_{12}\)H\(_{10}\)) and 7.5 g of naphthalene (C\(_{10}\)H\(_8\)) are dissolved in 200 g of benzene. Calculate the freezing point of the solution.<br/>
+        (Freezing point of benzene = 5.5 °C, \( K_f = 5.12\,^\circ\text{C}\,\text{kg mol}^{-1} \))</b><br/>
+        A. 0.47  B. 2.33  C. 3.17  D. 5.03<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        n_{\text{diphenyl}} = \frac{5}{154} \approx 0.0325
+        \]
+        \[
+        n_{\text{naphthalene}} = \frac{7.5}{128} \approx 0.0586
+        \]
+        Total mol = 0.0911<br/>
+        \[
+        \text{Molality} = \frac{0.0911}{0.200} = 0.4555
+        \]
+        \[
+        \Delta T_f = 5.12 \times 0.4555 \approx 2.33
+        \]
+        \[
+        T_f = 5.5 - 2.33 = 3.17
+        \]
+        <b>Answer: C. 3.17</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>21. Commercial bleach contains 7.65% NaClO by mass. If the density is 1.29 g/mL, what is the molarity of NaClO?</b><br/>
+        (Molar mass of NaClO = 74.5 g/mol)<br/>
+        A. 0.755  B. 1.02  C. 1.32  D. 2.32<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        \text{Mass of solution} = 1000 \times 1.29 = 1290\, \text{g}
+        \]
+        \[
+        \text{Mass of NaClO} = 1290 \times \frac{7.65}{100} = 98.685
+        \]
+        \[
+        n = \frac{98.685}{74.5} \approx 1.325
+        \]
+        \[
+        \text{Molarity} = \frac{1.325}{1} = 1.325
+        \]
+        <b>Answer: C. 1.32</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>22. When sufficient AgNO\(_3\) is added to 50 cm\(^3\) of magnesium chloride solution, 3 g of AgCl is precipitated. What is the concentration of magnesium chloride?</b><br/>
+        A. 0.1 mol/L<br/>
+        B. 0.2 mol/L<br/>
+        C. 0.4 mol/L<br/>
+        D. 0.8 mol/L<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        n_{\text{AgCl}} = \frac{3}{143.5} \approx 0.0209
+        \]
+        \[
+        n_{\text{MgCl}_2} = \frac{0.0209}{2} = 0.01045
+        \]
+        \[
+        \text{Concentration} = \frac{0.01045}{0.050} = 0.209
+        \]
+        <b>Answer: B. 0.2</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>23. Which statement about an ideal solution is incorrect?</b><br/>
+        A. There is heat change when the solution is formed<br/>
+        B. It can be formed in any proportion<br/>
+        C. Volume of solution equals sum of volumes of components<br/>
+        D. Vapour pressure obeys Raoult’s law<br/><br/>
+
+        <b>Solution:</b><br/>
+        Ideal solutions have no enthalpy change and no volume change.<br/>
+        <b>Answer: A. There is heat change when the solution is formed</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>24. What is the correct method to prepare 0.8 mol/L CuSO\(_4\) solution using CuSO\(_4\)·5H\(_2\)O?</b><br/>
+        A. Dissolve 128 g in 1 L of water<br/>
+        B. Dissolve 200 g in 1 L of water<br/>
+        C. Dissolve 200 g in some water, then dilute to 1 L<br/>
+        D. Heat 200 g to remove water, then dissolve<br/><br/>
+
+        <b>Solution:</b><br/>
+        Molar mass of CuSO\(_4\)·5H\(_2\)O = 250  
+        \[
+        n = 0.8\, \text{mol}
+        \]
+        \[
+        m = 0.8 \times 250 = 200\, \text{g}
+        \]<br/>
+        Proper method: dissolve in less water first, then dilute to 1 L.<br/>
+        <b>Answer: C. Dissolve 200 g in appropriate amount of water, then dilute to 1 L</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>25. When 500 g of saturated solution of salt Z is cooled from 60 °C to 30 °C, 66 g of crystals form. The final mass percent of solute is 15%. What is the solubility of Z at 60 °C?</b><br/>
+        A. 35.54 g/100 g H\(_2\)O<br/>
+        B. 62.10 g/100 g H\(_2\)O<br/>
+        C. 100.64 g/100 g H\(_2\)O<br/>
+        D. 131.1 g/100 g H\(_2\)O<br/><br/>
+
+        <b>Solution:</b><br/>
+        \[
+        \text{Final solute mass} = 500 - 66 = 434\, \text{g solution}
+        \]
+        \[
+        \text{15% solute} = 0.15 \times 434 \approx 65.1\, \text{g}
+        \]
+        \[
+        \text{Water} = 434 - 65.1 = 368.9\, \text{g}
+        \]
+        \[
+        \text{Initial solute} = 65.1 + 66 = 131.1\, \text{g}
+        \]
+        \[
+        \text{Solubility} = \frac{131.1}{368.9} \times 100 \approx 35.54
+        \]
+        <b>Answer: A. 35.54 g/100 g H\(_2\)O</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>26. If urea forms an ideal solution at 25 °C, what is the vapour pressure of a 25% by mass urea solution?</b><br/>
+        (Relative molar mass of urea = 60; vapour pressure of water at 25 °C = 3.17 kPa)<br/>
+        A. 30.5 kPa<br/>
+        B. 2.95 kPa<br/>
+        C. 2.88 kPa<br/>
+        D. 2.38 kPa<br/><br/>
+
+        <b>Solution:</b><br/>
+        Assume 100 g solution → 25 g urea, 75 g water  
+        \[
+        n_{\text{urea}} = \frac{25}{60} = 0.4167
+        \]
+        \[
+        n_{\text{water}} = \frac{75}{18} = 4.167
+        \]
+        \[
+        \text{Mole fraction of water} = \frac{4.167}{0.4167 + 4.167} = 0.909
+        \]
+        P = 3.17 \times 0.909 \approx 2.88
+        \]<br/>
+        <b>Answer: C. 2.88 kPa</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>27. After copper reacts with dilute nitric acid, nitrate ion concentration decreases by 0.2 mol L\(^{-1}\). What is the corresponding decrease in \([ \text{H}^+ ]\)?</b><br/>
+        A. 0.2 mol L\(^{-1}\)<br/>
+        B. 0.4 mol L\(^{-1}\)<br/>
+        C. 0.6 mol L\(^{-1}\)<br/>
+        D. 0.8 mol L\(^{-1}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Balanced reaction:  
+        \[
+        \text{Cu} + 4\text{HNO}_3 \rightarrow \text{Cu(NO}_3)_2 + 2\text{NO}_2 + 2\text{H}_2\text{O}
+        \]
+        2 nitrate ions are formed per 4 H⁺ used  
+        \[
+        \text{Decrease in } [\text{H}^+] = 0.4
+        \]
+        <b>Answer: B. 0.4 mol L\(^{-1}\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>28. 200 g of substance B is dissolved in 2 L of water. If partition coefficient \( K = \frac{1}{2} \), how many grams of B are left in water after extraction with 2 L ether?</b><br/>
+        A. 33.33  B. 66.67  C. 100  D. 133.33<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let amount in ether = \( x \)  
+        \[
+        \frac{\frac{x}{2}}{\frac{200 - x}{2}} = \frac{1}{2}
+        \]
+        \[
+        \frac{x}{200 - x} = \frac{1}{2}
+        \]
+        \[2x = 200 - x
+        \]
+        \[3x = 200
+        \]
+        \[x = 66.67
+        \]
+        \[
+        \text{Remaining} = 200 - 66.67 = 133.33
+        \]<br/>
+        <b>Answer: D. 133.33 g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>29. A solution contains 14 g of solute S in 240 mL water. Partition coefficient between ether and water = 6. How much solute is extracted into 40 mL ether?</b><br/>
+        A. 2  B. 6  C. 7  D. 12 g<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let \( x \) = amount of solute extracted into ether.<br/>
+        Then \( 14 - x \) remains in water.<br/>
+        Partition coefficient \( K = \frac{[S]_{\text{ether}}}{[S]_{\text{water}}} = \frac{\frac{x}{40}}{\frac{14 - x}{240}} = 6 \)<br/>
+        \[
+        \frac{\frac{x}{40}}{\frac{14 - x}{240}} = 6
+        \]
+        \[
+        \frac{x \cdot 240}{40(14 - x)} = 6
+        \]
+        \[
+        \frac{6x}{14 - x} = 6
+        \]
+        \[
+        \frac{x}{14 - x} = 1
+        \]
+        \[
+        x = 7
+        \]
+        <b>Answer: C. 7</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>30. What happens when a small KMnO\(_4\) crystal is added to 10 mL saturated NaCl solution?</b><br/>
+        A. KMnO\(_4\) will dissolve<br/>
+        B. NaCl will crystallize<br/>
+        C. KMnO\(_4\) will dissolve completely<br/>
+        D. KMnO\(_4\) will dissolve partially<br/><br/>
+
+        <b>Solution:</b><br/>
+        Since the solution is saturated with NaCl, the KMnO\(_4\) solubility is not limited by it. KMnO\(_4\) is soluble in water and will dissolve.<br/>
+        <b>Answer: A. KMnO\(_4\) will dissolve</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>31. In a mixture of K\(_2\)SO\(_4\) and CuSO\(_4\) solution, if the concentration of K⁺ is 0.2 mol L\(^{-1}\) and the concentration of Cu\(^2\)⁺ is 0.3 mol L\(^{-1}\), what is the concentration of SO\(_4\)\(^2\)⁻?</b><br/>
+        A. 0.5 molL\(^{-1}\)<br/>
+        B. 0.4 molL\(^{-1}\)<br/>
+        C. 0.3 molL\(^{-1}\)<br/>
+        D. 0.2 molL\(^{-1}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        From K\(_2\)SO\(_4\):<br/>
+        \[
+        \text{K}_2\text{SO}_4 \rightarrow 2\text{K}^+ + \text{SO}_4^{2-}
+        \]
+        \[
+        \frac{0.2}{2} = 0.1\, \text{mol L}^{-1}
+        \]<br/>
+        From CuSO\(_4\):<br/>
+        \[
+        \text{CuSO}_4 \rightarrow \text{Cu}^{2+} + \text{SO}_4^{2-}
+        \]
+        \[
+        0.3\, \text{mol L}^{-1}
+        \]<br/>
+        Total sulfate:<br/>
+        \[
+        0.1 + 0.3 = 0.4\, \text{mol L}^{-1}
+        \]<br/>
+        <b>Answer: B. 0.4 mol L\(^{-1}\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>32. Which of the following concentrations is affected by temperature change, assuming no phase change?</b><br/>
+        A. Mole fraction<br/>
+        B. Molality<br/>
+        C. Molarity<br/>
+        D. Mass percentage<br/><br/>
+
+        <b>Solution:</b><br/>
+        Only molarity depends on solution volume, which changes with temperature.<br/>
+        <b>Answer: C. Molarity</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>33. 1 mol of liquid S and 3 mol of liquid Q were mixed to form an ideal solution. If the vapor pressure of pure S is \( x \) and that of Q is \( y \), what is the vapor pressure of the ideal solution?</b><br/>
+        A. \( x + 3y \)  B. \( x + y \)  C. \( \frac{x + 3y}{3} \)  D. \( \frac{x + 3y}{4} \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Raoult's Law:<br/>
+        \[
+        P = \frac{1}{4}x + \frac{3}{4}y = \frac{x + 3y}{4}
+        \]<br/>
+        <b>Answer: D. \( \frac{x + 3y}{4} \)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>34. 10.45 g of solute X is dissolved in water to give 64.9 g of saturated solution at 10 °C. What is the solubility of X?</b><br/>
+        A. 54.45 g/100 g water<br/>
+        B. 19.19 g/100 g water<br/>
+        C. 16.10 g/100 g water<br/>
+        D. 10.45 g/100 g water<br/><br/>
+
+        <b>Solution:</b><br/>
+        Mass of solvent = 64.9 - 10.45 = 54.45 g<br/>
+        \[
+        \text{Solubility} = \frac{10.45}{54.45} \times 100 \approx 19.19
+        \]
+        <b>Answer: B. 19.19 g/100 g water</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>35. 1 g of salt is dissolved in 1 L of water at 30 °C, and the solution is cooled to 4 °C. Which of the following concentrations will change?</b><br/>
+        A. Mole fraction<br/>
+        B. Molarity<br/>
+        C. Molality<br/>
+        D. Mass percentage<br/><br/>
+
+        <b>Solution:</b><br/>
+        Volume changes with temperature → affects molarity only.<br/>
+        <b>Answer: B. Molarity</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
