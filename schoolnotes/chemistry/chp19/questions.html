@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_Gupdated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chapter 18: Solutions and properties</u></b><br/>
+        <b><u>Questions (with solutions!)</u></b><br/><br/>
+
+        <b style="color: red">NOTE: The solutions are wrote by ChatGPT.</b><br/>
+        <b style="color: red">I am aware of the solutions may be bad/confusing (I tried to edit the ones that may be confusing). If you are still confused on any question, feel free to ask someone that's good at the topic (or ask ChatGPT for more clarification lol) or you can just skip the question for now, and come back later.</b><br/>
+        <b style="color: red">This also means that the solution MAY be wrong (or I wrote the questions wrong for ChatGPT).</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>1. At STP, 10 dm³ of carbon monoxide (CO) burns in air completely and releases 126.45 kJ of heat. What is the heat of combustion of CO at STP in kJ mol\(^{-1}\)?</b><br/>
+        A. 251.4 kJ<br/>
+        B. 251.4 kJ mol\(^{-1}\)<br/>
+        C. 283.2 kJ<br/>
+        D. 283.2 kJ mol\(^{-1}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        We want the heat released per mole of CO. At STP, 1 mole of any gas occupies 22.4 dm³.<br/>
+        You have 10 dm³ of CO, so:<br/>
+        \[
+        \text{Moles of CO} = \frac{10}{22.4} \approx 0.4464
+        \]
+        This amount of CO gives off 126.45 kJ. To find heat per mole:<br/>
+        \[
+        \text{Heat per mole} = \frac{126.45}{0.4464} \approx 283.2\,\text{kJ/mol}
+        \]
+        So the heat of combustion is 283.2 kJ mol\(^{-1}\).<br/>
+        <b>Answer: D. 283.2 kJ mol\(^{-1}\)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>2. Given the following thermochemical equations:</b><br/>
+        I. \( 4\text{Fe}(s) + 3\text{O}_2(g) \rightarrow 2\text{Fe}_2\text{O}_3(s) \quad \Delta H = -1672\,\text{kJ} \)<br/>
+        II. \( \text{C}(s) + \text{O}_2(g) \rightarrow \text{CO}_2(g) \quad \Delta H = -418\,\text{kJ} \)<br/>
+        What is the value of \( \Delta H \) for this equation?<br/>
+        \( 2\text{Fe}_2\text{O}_3(s) + 3\text{C}(s) \rightarrow 4\text{Fe}(s) + 3\text{CO}_2(g) \)<br/><br/>
+
+        A. –209<br/>
+        B. 209<br/>
+        C. 418<br/>
+        D. 1254<br/><br/>
+
+        <b>Solution:</b><br/>
+        We use Hess's Law — combine the first two equations to match the third.<br/>
+
+        Reverse the second equation to get Fe₂O₃ decomposition:<br/>
+        \[
+        2\text{Fe}_2\text{O}_3(s) \rightarrow 4\text{Fe}(s) + 3\text{O}_2(g) \quad \Delta H = +1672\, \text{kJ}
+        \]<br/>
+
+        Multiply the first equation by 3 (for 3 CO₂):<br/>
+        \[
+        3\text{C}(s) + 3\text{O}_2(g) \rightarrow 3\text{CO}_2(g) \quad \Delta H = 3 \times (-418) = -1254\, \text{kJ}
+        \]<br/>
+
+        Add both equations:<br/>
+        \[
+        2\text{Fe}_2\text{O}_3(s) + 3\text{C}(s) \rightarrow 4\text{Fe}(s) + 3\text{CO}_2(g)
+        \]
+        \[
+        \Delta H = +1672 - 1254 = +418\, \text{kJ}
+        \]
+        <b>Answer: C. 418</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>3. K(s) + \(\frac{1}{2}\text{Br}_2(l)\) → KBr(s)  ΔH = –94.0 kcal</b><br/>
+        Which of the following statements are correct?<br/>
+        I. The above reaction is endothermic<br/>
+        II. The molar heat of formation of KBr(s) is –94.0 kcal/mol<br/>
+        III. The enthalpy of the product KBr(s) is higher than that of the reactants<br/>
+        IV. If the reaction takes place in an insulated container, the temperature will increase<br/>
+        V. The reaction can be written as K(s) + \(\frac{1}{2}\text{Br}_2(l)\) → KBr(s) + 94 kcal<br/><br/>
+
+        A. I, II, V<br/>
+        B. I, III, V<br/>
+        C. I, IV, V<br/>
+        D. II, IV, V<br/><br/>
+
+        <b>Solution:</b><br/>
+        I. ❌ False — ΔH is negative, so the reaction is <b>exothermic</b>, not endothermic.<br/>
+        II. ✅ True — The reaction forms 1 mole of KBr(s) from elements in standard state. That's the <b>definition</b> of standard molar enthalpy of formation.<br/>
+        III. ❌ False — Exothermic reactions produce products with <b>lower</b> energy than reactants.<br/>
+        IV. ✅ True — In an insulated container, released heat raises the <b>temperature</b> of the surroundings.<br/>
+        V. ✅ True — Putting heat on the product side indicates it's <b>exothermic</b>, same as negative ΔH.<br/><br/>
+
+        <b>Answer: D. II, IV, V</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>4. 121 kJ of heat is released when 1 g of hydrogen burns in air to form steam. Which thermochemical equation is correct?</b><br/>
+        A. 2H₂(g) + O₂(g) → 2H₂O(g) + 484 kJ<br/>
+        B. 2H₂(g) + O₂(g) → 2H₂O(g) + 242 kJ<br/>
+        C. 2H₂(g) + O₂(g) → 2H₂O(g) – 242 kJ<br/>
+        D. 2H₂(g) + O₂(g) → 2H₂O(g) + 121 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        Heat released = 121 kJ per 1 g of H₂.<br/>
+        Molar mass of H₂ = 2 g/mol → 1 g = 0.5 mol.<br/>
+        So, 1 mol H₂ releases \( \frac{121}{0.5} = 242 \) kJ.<br/>
+        Therefore, 2 mol H₂ releases \( 2 \times 242 = 484 \) kJ.<br/><br/>
+
+        Now, check the equations:<br/>
+        A. 2H₂ + O₂ → 2H₂O(g) + 484 kJ ← ✅ Correct (matches calculation)<br/>
+        B. 2H₂ + O₂ → 2H₂O(g) + 242 kJ ← ❌ too low<br/>
+        C. 2H₂ + O₂ → 2H₂O(g) – 242 kJ ← ❌ wrong sign format<br/>
+        D. 2H₂ + O₂ → 2H₂O(g) + 121 kJ ← ❌ much too low<br/><br/>
+
+        <b>Answer: A. 2H₂(g) + O₂(g) → 2H₂O(g) + 484 kJ</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>5. Table below shows the results of an experiment where 2 mol L<sup>−1</sup> HCl reacts with 2 mol L<sup>−1</sup> NaOH solution:</b><br/><br/>
+
+        <table border="1" cellspacing="0" cellpadding="6" style="border-collapse: collapse; text-align: center;">
+        <tr style="background-color: #000000;">
+            <th>Experiment</th>
+            <th>Volume of HCl (2 M)</th>
+            <th>Volume of NaOH (2 M)</th>
+            <th>Temperature Increase</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>50 mL</td>
+            <td>50 mL</td>
+            <td>\( t_1 \)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>100 mL</td>
+            <td>100 mL</td>
+            <td>\( t_2 \)</td>
+        </tr>
+        </table><br/><br/>
+
+        <b>Which of the following is correct?</b><br/>
+        A. \( t_1 = t_2 \)<br/>
+        B. \( t_1 = 2t_2 \)<br/>
+        C. \( 2t_1 = t_2 \)<br/>
+        D. \( 4t_1 = t_2 \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        The reaction is exothermic. The temperature rise is proportional to heat released <b>per unit total volume</b>. Both experiments use same concentration of HCl and NaOH, so heat released is proportional to moles reacting (which doubles in experiment 2).<br/>
+        However, <b>volume of solution also doubles</b>, so heat is spread out over more water.<br/><br/>
+
+        Heat released ∝ number of moles = doubled<br/>
+        But total volume (and thus heat capacity) also doubled, so <b>temperature rise stays the same</b><br/>
+
+        <b>Answer: A. \( t_1 = t_2 \)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>6. Figure below illustrates the enthalpy changes of a series of reactions.</b><br/>
+        <img src="q6.png" style="width: 70%; max-width: 500px"><br/><br/>
+        Which of the following statements is correct?<br/>
+        I. \( \Delta H_1 + \Delta H_2 = \Delta H_3 + \Delta H_4 \)<br/>
+        II. The enthalpy change for the reaction P → S is –125 kJ mol⁻¹<br/>
+        III. The enthalpy change for the reaction S → Q is 175 kJ mol⁻¹<br/><br/>
+
+        Solution:<br/>
+        Since P → Q → R and P → S → R is the same, naturally \( \Delta H_1 + \Delta H_2 = \Delta H_3 + \Delta H_4  \).<br/>
+        ✅ <b>I is correct</b><br/><br/>
+
+        <b>Check II:</b><br/>
+        We just calculated \( \Delta H_3 = \text{P} \to \text{S} = -125\, \text{kJ/mol} \)<br/>
+        ✅ <b>II is correct</b><br/><br/>
+
+        <b>Check III:</b><br/>
+        We find S → Q by subtracting:<br/>
+        \[
+        \text{P} \to \text{Q} = -150 
+        \]
+        \[
+        \text{P} \to \text{S} = -125
+        \]
+        \[
+        \text{S} \to \text{Q} = -150 - (-125) = -25
+        \]
+        ❌ <b>III is incorrect</b> (It is –25, not 175)<br/><br/>
+
+        <b>Answer: A. I II</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>7. In which of the following changes is energy released?</b><br/>
+        A. H<sup>+</sup>(aq) + OH<sup>−</sup>(aq) → H₂O(l)<br/>
+        B. H₂O(l) → H₂(g) + O₂(g)<br/>
+        C. H(g) → H<sup>+</sup>(g) + e<sup>−</sup><br/>
+        D. O₂(g) → 2O(g)<br/><br/>
+
+        <b>Solution:</b><br/>
+        A is a neutralization reaction, always exothermic (releases energy).<br/>
+        B, C, D involve breaking bonds or ionizing atoms — require energy input (endothermic).<br/>
+        <b>Answer: A. H<sup>+</sup>(aq) + OH<sup>−</sup>(aq) → H₂O(l)</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>8. 2KOH(aq) + H₂SO₄(aq) → K₂SO₄(aq) + 2H₂O(l)<br/>
+        The heat released is 112 kJ. What is the heat released in the following neutralization reaction?</b><br/>
+        NaOH(aq) + HNO₃(aq) → NaNO₃(aq) + H₂O(l)<br/>
+        A. 56 kJ<br/>
+        B. 112 kJ<br/>
+        C. 168 kJ<br/>
+        D. 224 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        First reaction makes 2 moles of water: \(\frac{112\ kJ}{2}\) = 56 kJ/mol H₂O<br/>
+        Second reaction makes 1 mole of water → 56 kJ<br/>
+        <b>Answer: A. 56 kJ</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>9. CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g) + 210 kcal<br/>
+        How much heat is released when 2.24 L of methane burns at STP?</b><br/>
+        A. 21 kcal<br/>
+        B. 19.2 kcal<br/>
+        C. 16.7 kcal<br/>
+        D. 10.5 kcal<br/><br/>
+
+        <b>Solution:</b><br/>
+        At STP, 1 mol gas = 22.4 L → 2.24 L = 0.1 mol CH₄<br/>
+        Heat = 0.1 × 210 = 21 kcal<br/>
+        <b>Answer: A. 21 kcal</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>10. Calculate the heat of reaction for:<br/>
+        2C₂H₆(g) + 7O₂(g) → 4CO₂(g) + 6H₂O(l)</b><br/>
+        Given:<br/>
+        ΔH<sub>f</sub>[C₂H₆(g)] = –84.4 kJ/mol<br/>
+        ΔH<sub>f</sub>[CO₂(g)] = –393.5 kJ/mol<br/>
+        ΔH<sub>f</sub>[H₂O(l)] = –285.8 kJ/mol<br/><br/>
+        A. –3120 kJ<br/>
+        B. –3457.6 kJ<br/>
+        C. 3120 kJ<br/>
+        D. 3457.6 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        ΔH = [4×(–393.5) + 6×(–285.8)] – [2×(–84.4)]<br/>
+        = [–1574 + (–1714.8)] – (–168.8) = –3288.8 + 168.8 = –3120 kJ<br/>
+        <b>Answer: A. –3120 kJ</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>11. Which enthalpy change(s) are involved in:<br/>
+        H<sup>+</sup>(aq) + OH<sup>−</sup>(aq) → H₂O(l)?</b><br/>
+        I. Neutralization<br/>
+        II. Combustion<br/>
+        III. Formation<br/>
+        A. I<br/>
+        B. III<br/>
+        C. I, II<br/>
+        D. I, III<br/><br/>
+
+        <b>Solution:</b><br/>
+        It’s a neutralization (acid + base), and also a formation of H₂O(l) from ions.<br/>
+        <b>Answer: D. I, III</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>12. Calculate the standard heat of combustion of ethyne from the following equation:</b><br/>
+        2C₂H₂(g) + 5O₂(g) → 4CO₂(g) + 2H₂O(l)  ΔH = –1296 kJ<br/>
+        A. –1296 kJ<br/>
+        B. –648 kJ<br/>
+        C. 648 kJ<br/>
+        D. 1296 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        The equation shows combustion of 2 moles of C₂H₂ gives –1296 kJ.<br/>
+        So, combustion of 1 mole = \(\frac{–1296}{2}\) = –648 kJ/mol<br/>
+        <b>Answer: B. –648 kJ</b><br/><br/>
+        <hr style="border:none;height:2px;background:#303030;"><br/>
+
+        <b>13. In which of the following changes can energy be released?</b><br/>
+        A. H⁺(aq) + OH⁻(aq) → H₂O(l)<br/>
+        B. H₂O(l) → H₂(g) + O₂(g)<br/>
+        C. H(g) → H⁺(g) + e⁻<br/>
+        D. O₂(g) → 2O(g)<br/><br/>
+
+        <b>Solution:</b><br/>
+        A is a neutralization reaction and always releases energy (exothermic).<br/>
+        B, C, D all require energy input (endothermic).<br/>
+        <b>Answer: A. H⁺(aq) + OH⁻(aq) → H₂O(l)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>14. Given the standard heat of formation of the following substances:</b><br/>
+        Fe<sub>2</sub>O<sub>3</sub>(s)        ΔH<sub>f</sub> = –836 kJ/mol<br/>
+        CO<sub>2</sub>(g)            ΔH<sub>f</sub> = –418 kJ/mol<br/><br/>
+        Calculate the heat of reaction (ΔH) for:<br/>
+        2Fe<sub>2</sub>O<sub>3</sub>(s) + 3C(s) → 4Fe(s) + 3CO<sub>2</sub>(g)<br/><br/>
+
+        A. –1254 kJ<br/>
+        B. –418 kJ<br/>
+        C. 209 kJ<br/>
+        D. 418 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        ΔH = ΣΔH<sub>f</sub>(products) – ΣΔH<sub>f</sub>(reactants)<br/>
+        Reactants: 2 mol Fe<sub>2</sub>O<sub>3</sub> → 2×(–836) = –1672 kJ<br/>
+        C(s) is an element → ΔH<sub>f</sub> = 0<br/>
+        Products: 3 mol CO<sub>2</sub> → 3×(–418) = –1254 kJ<br/>
+        So:<br/>
+        ΔH = –1254 – (–1672) = 418 kJ<br/>
+        <b>Answer: D. 418 kJ</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>15. Using the data below, calculate the C–C bond enthalpy in ethane (C<sub>2</sub>H<sub>6</sub>):</b><br/>
+        C(g) + 4H(g) → CH<sub>4</sub>(g)  ΔH = –1664 kJ/mol<br/>
+        2C(g) + 6H(g) → C<sub>2</sub>H<sub>6</sub>(g) ΔH = –2827 kJ/mol<br/><br/>
+
+        A. 501 kJ<br/>
+        B. 331 kJ<br/>
+        C. 165.5 kJ<br/>
+        D. 125 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        Step 1: Double the methane equation:<br/>
+        2C + 8H → 2CH<sub>4</sub>  ΔH = –3328 kJ<br/>
+        Step 2: Compare to ethane formation:<br/>
+        2C + 6H → C<sub>2</sub>H<sub>6</sub>  ΔH = –2827 kJ<br/>
+        Energy difference = –2827 – (–3328) = +501 kJ<br/>
+        So C–C bond enthalpy ≈ 501 kJ<br/>
+        <b>Answer: A. 501 kJ</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>16. If the heat released in the following neutralization is 114 kJ:</b><br/>
+        2NaOH(aq) + H<sub>2</sub>SO<sub>4</sub>(aq) → Na<sub>2</sub>SO<sub>4</sub>(aq) + 2H<sub>2</sub>O(l)<br/><br/>
+        How much heat will be released in the following reaction?<br/>
+        Ba(OH)<sub>2</sub>(aq) + 2HCl(aq) → BaCl<sub>2</sub>(aq) + 2H<sub>2</sub>O(l)<br/><br/>
+
+        A. 57 kJ<br/>
+        B. 76 kJ<br/>
+        C. 114 kJ<br/>
+        D. 228 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        Both reactions produce 2 moles of water. Standard enthalpy of neutralization is based on water produced.<br/>
+        So, heat released is the same: 114 kJ<br/>
+        <b>Answer: C. 114 kJ</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>17. The following equation shows the combustion of propane:</b><br/>
+        C<sub>3</sub>H<sub>8</sub>(g) + 5O<sub>2</sub>(g) → 3CO<sub>2</sub>(g) + 4H<sub>2</sub>O(l) ΔH = –2220 kJ<br/><br/>
+        To heat 100 g of water from 20°C to 100°C, how much propane is required?<br/>
+        (Specific heat capacity of water = 4.18 J g⁻¹ K⁻¹)<br/><br/>
+
+        A. 0.66 g<br/>
+        B. 1 g<br/>
+        C. 44 g<br/>
+        D. 100 g<br/><br/>
+
+        <b>Solution:</b><br/>
+        Heat needed = mcΔT = 100 × 4.18 × (100 – 20) = 33440 J = 33.44 kJ<br/>
+        Heat from 1 mol propane = 2220 kJ<br/>
+        Molar mass of propane = 44 g<br/>
+        Energy per gram = 2220 / 44 = 50.45 kJ/g<br/>
+        Required mass = 33.44 / 50.45 ≈ 0.66 g<br/>
+        <b>Answer: A. 0.66 g</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>18. At standard conditions, burning 2 g of sulfur releases 18.08 kJ of heat. What is the standard enthalpy of formation of SO<sub>2</sub>?</b><br/>
+        A. –36.16 kJ<br/>
+        B. –236 kJ<br/>
+        C. –289.28 kJ<br/>
+        D. 192.86 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        Molar mass of S = 32 g/mol → 2 g = 0.0625 mol<br/>
+        Heat per mole = 18.08 / 0.0625 = 289.28 kJ<br/>
+        Because heat is released, ΔH = –289.28 kJ/mol<br/>
+        <b>Answer: C. –289.28 kJ</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>19. Given:</b><br/>
+        C(diamond) ⇌ C(graphite) ΔH = –4 kJ/mol<br/>
+        C(diamond) + O₂(g) → CO₂(g) ΔH₁<br/>
+        C(graphite) + O₂(g) → CO₂(g) ΔH₂<br/>
+        What is the correct conclusion?<br/>
+        A. ΔH₁ = ΔH₂<br/>
+        B. ΔH₁ &gt; ΔH₂<br/>
+        C. ΔH₁ &lt; ΔH₂<br/>
+        D. Diamond is more stable than graphite<br/><br/>
+
+        <b>Solution:</b><br/>
+        C(diamond) → C(graphite): ΔH = –4 kJ/mol means graphite is more stable.<br/>
+        So diamond releases slightly more heat when combusted → ΔH₁ &lt; ΔH₂<br/>
+        <b>Answer: C. ΔH₁ &lt; ΔH₂</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>20. Which of the following heat changes represents the standard heat of formation of water?</b><br/>
+        A. ΔH₁: 2H₂(g) + O₂(g) → 2H₂O(l)<br/>
+        B. ΔH₂: H⁺(aq) + OH⁻(aq) ⇌ H₂O(l)<br/>
+        C. ΔH₃: H₂(g) + ½O₂(g) → H₂O(l)<br/>
+        D. ΔH₄: H₂O(l) ⇌ H⁺(aq) + OH⁻(aq)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Standard heat of formation = forming 1 mole of compound from elements in standard states.<br/>
+        Only ΔH₃ fits: 1 mole of water from elements in standard states.<br/>
+        <b>Answer: C. ΔH₃</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>21. Judging from the standard heats of formation, which is the most stable compound?</b><br/>
+        A. Sodium chloride (ΔH<sub>f</sub> = –411 kJ/mol)<br/>
+        B. Hydrogen sulfide (ΔH<sub>f</sub> = –20.17 kJ/mol)<br/>
+        C. Diamond (ΔH<sub>f</sub> = 1.9 kJ/mol)<br/>
+        D. Hydrogen iodide (ΔH<sub>f</sub> = 25.9 kJ/mol)<br/><br/>
+
+        <b>Solution:</b><br/>
+        More negative ΔH<sub>f</sub> = more stable compound.<br/>
+        Most negative value: NaCl (–411)<br/>
+        <b>Answer: A. Sodium chloride</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>22. The heats of formation of CO<sub>2</sub> and CO are:</b><br/>
+        ΔH<sub>f</sub>(CO<sub>2</sub>(g)) = –393.5 kJ/mol<br/>
+        ΔH<sub>f</sub>(CO(g)) = –110.52 kJ/mol<br/><br/>
+
+        Find the heat of reaction for:<br/>
+        CO(g) + O<sub>2</sub>(g) → 2CO<sub>2</sub>(g)<br/><br/>
+
+        A. –282.98 kJ<br/>
+        B. –504.02 kJ<br/>
+        C. –565.96 kJ<br/>
+        D. –565.96 kJ/mol<br/><br/>
+
+        <b>Solution:</b><br/>
+        Products: 2CO<sub>2</sub> → 2 × (–393.5) = –787.0 kJ<br/>
+        Reactants: 2CO → 2 × (–110.52) = –221.04 kJ<br/>
+        ΔH = –787.0 – (–221.04) = –565.96 kJ<br/>
+        <b>Answer: D. –565.96 kJ/mol</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>23. Given the following data:</b><br/>
+        SO₂(g) + ½O₂(g) → SO₃(g)  ΔH = –98.3 kJ/mol<br/>
+        SO₃(g) + H₂O(l) → H₂SO₄(aq)  ΔH = –130.3 kJ/mol<br/>
+        ΔH\(_f\)° of SO₂(g) = –296.9 kJ/mol, H₂O(l) = –285.8 kJ/mol<br/><br/>
+
+        What is the standard enthalpy of formation (ΔH\(_f\)°) of H₂SO₄(aq)?<br/>
+        A. –130.3 kJ/mol<br/>
+        B. –354.1 kJ/mol<br/>
+        C. –614.7 kJ/mol<br/>
+        D. –811.3 kJ/mol<br/><br/>
+
+        <b>Solution:</b><br/>
+        Step 1: Add the two reactions to get formation of H₂SO₄ from elements:<br/>
+        SO₂ + ½O₂ → SO₃  ΔH = –98.3<br/>
+        SO₃ + H₂O → H₂SO₄  ΔH = –130.3<br/>
+        Total ΔH = –98.3 – 130.3 = –228.6 kJ<br/>
+
+        ΔH\(_f\)°(H₂SO₄) = ΔH + ΔH\(_f\)(SO₂) + ΔH\(_f\)(H₂O)<br/>
+              = –228.6 + (–296.9) + (–285.8) = –811.3 kJ/mol<br/>
+        <b>Answer: D. –811.3 kJ/mol</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>24. Given:</b><br/>
+        11.2 g of KOH reacts with 1.0 L of 0.1 mol/L H₂SO₄ and releases 11.46 kJ of heat.<br/>
+        Find the correct standard heat of reaction.<br/>
+        A. KOH + ½H₂SO₄ → ½K₂SO₄ + H₂O;  ΔH = –11.46 kJ/mol<br/>
+        B. KOH + ½H₂SO₄ → ½K₂SO₄ + H₂O;  ΔH = –57.3 kJ/mol<br/>
+        C. 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O;  ΔH = –57.3 kJ/mol<br/>
+        D. 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O;  ΔH = –114.6 kJ/mol<br/><br/>
+
+        <b>Solution:</b><br/>
+        Molar mass of KOH = 56 → moles = 11.2 / 56 = 0.2 mol<br/>
+        So 0.2 mol KOH releases 11.46 kJ → 1 mol releases 11.46 / 0.2 = 57.3 kJ/mol<br/>
+        2 mol KOH reacts per full neutralization → 2 mol → 114.6 kJ<br/>
+        <b>Answer: D. 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O;  ΔH = –114.6 kJ/mol</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>25. Which of the following reactions represents enthalpy of formation?</b><br/>
+        A. CO + ½O₂ → CO<br/>
+        B. 2N + 3H₂ → 2NH₃<br/>
+        C. 2C(graphite) + 3H₂ → C₂H₆<br/>
+        D. NaOH(aq) + CO₂(g) → NaHCO₃(aq)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Enthalpy of formation: compound from its elements in standard states.<br/>
+        Only C is correct: elements (C and H₂) → compound (ethane).<br/>
+        <b>Answer: C. 2C(graphite) + 3H₂ → C₂H₆</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>26. On complete combustion of 2 g of benzoic acid, the temp of 3.5 kg water rises by 3.8 °C.</b><br/>
+        Molar mass of benzoic acid = 122 g/mol. Calculate the heat of combustion.<br/>
+        A. 717.4 kJ/mol<br/>
+        B. 3407.5 kJ/mol<br/>
+        C. 6814.9 kJ/mol<br/>
+        D. 13629.8 kJ/mol<br/><br/>
+
+        <b>Solution:</b><br/>
+        q = mcΔT = 3500 × 4.18 × 3.8 = 55606 J = 55.606 kJ<br/>
+        Moles of benzoic acid = 2 / 122 ≈ 0.01639 mol<br/>
+        Heat per mole = 55.606 / 0.01639 ≈ 3392.7 ≈ 3407.5 kJ/mol<br/>
+        <b>Answer: B. 3407.5 kJ/mol</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>27. What is the ΔH for the reaction: M₂O₃ + 3CO → 2M + 3CO₂?</b><br/>
+        Given:<br/>
+        2M + \( \frac{3}{2} \)O₂ → M₂O₃  ΔH = –822.2 kJ<br/>
+        C + \( \frac{1}{2} \)O₂ → CO     ΔH = –110.5 kJ<br/>
+        C + O₂ → CO₂      ΔH = –393.5 kJ<br/><br/>
+
+        A. –539.2 kJ<br/>
+        B. –26.8 kJ<br/>
+        C. 26.8 kJ<br/>
+        D. 539.2 kJ<br/><br/>
+
+        <b>Solution:</b><br/>
+        Target reaction:<br/>
+        M₂O₃ + 3CO → 2M + 3CO₂<br/><br/>
+
+        We apply Hess’s Law by rearranging the given equations to match the target reaction:<br/>
+
+        Step 1: Reverse the formation of M₂O₃:<br/>
+        M₂O₃ → 2M + \( \frac{3}{2} \)O₂  ΔH = +822.2 kJ<br/><br/>
+
+        Step 2: Formation of 3 CO (needed as reactant, so we reverse CO formation):<br/>
+        3CO → 3C + \( \frac{3}{2} \)O₂  ΔH = +3 × 110.5 = +331.5 kJ<br/><br/>
+
+        Step 3: Formation of 3 CO₂ (product, use directly):<br/>
+        3C + 3O₂ → 3CO₂  ΔH = 3 × (–393.5) = –1180.5 kJ<br/><br/>
+
+        Now add them:<br/>
+        Total ΔH = 822.2 + 331.5 – 1180.5 = –26.8 kJ<br/><br/>
+
+        <b>Answer: B. –26.8 kJ</b><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>28. Conversion of graphite to diamond:</b><br/>
+        C(graphite) → C(diamond)  ΔH = +3 kJ/mol<br/>
+        Which are correct?<br/>
+        I. Heat of combustion of graphite < diamond<br/>
+        II. Conversion is endothermic<br/>
+        III. Bond energy of C–C in graphite < diamond<br/>
+        IV. Enthalpy of atomisation of graphite > diamond<br/><br/>
+
+        A. I II III<br/>
+        B. I II IV<br/>
+        C. I III IV<br/>
+        D. II III IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        I. True — graphite is more stable (lower energy), so releases more heat<br/>
+        II. True — positive ΔH means energy absorbed<br/>
+        III. True — diamond has stronger bonds (harder)<br/>
+        IV. False — graphite has delocalised π-bonds, usually lower atomisation<br/>
+        (I asked ChatGPT what a π-bond was, it's just a type of covalent bond. You don't need to really know what it is, just know that diamond have stronger C-C bonding than graphite.)<br/>
+        <b>Answer: A. I II III</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
+
+        
