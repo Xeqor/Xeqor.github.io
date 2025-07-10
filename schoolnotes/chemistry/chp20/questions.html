@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_Gupdated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chapter 18: Solutions and properties</u></b><br/>
+        <b><u>Questions (with solutions!)</u></b><br/><br/>
+
+        <b style="color: red">NOTE: The solutions are wrote by ChatGPT.</b><br/>
+        <b style="color: red">I am aware of the solutions may be bad/confusing (I tried to edit the ones that may be confusing). If you are still confused on any question, feel free to ask someone that's good at the topic (or ask ChatGPT for more clarification lol) or you can just skip the question for now, and come back later.</b><br/>
+        <b style="color: red">This also means that the solution MAY be wrong (or I wrote the questions wrong for ChatGPT).</b><br/><br/>
+
+        <b>Update: For later questions I changed to using Claude, so it should be more accurate!</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>1. Which of the following statements concerning the diagram is correct?</b><br/><br/>
+        <img src="q1.png" style="width: 80%; max-width: 700px"><br/>
+
+        A. The heat of reaction for the overall reaction is –3 kJ mol⁻¹<br/>
+        B. The activation energy for A → C is 10 kJ mol⁻¹<br/>
+        C. The step which decides the rate is C → E<br/>
+        D. Intermediate products are B and D<br/><br/>
+
+        <b>Solution:</b><br/>
+        From the diagram:<br/>
+        – A is the starting point (reactant)<br/>
+        – E is the final point (product)<br/>
+        – Energy difference from A to E = 6 – 9 = –3 kJ mol⁻¹ → ✅ A is correct<br/><br/>
+
+        B. Activation energy for A → C = Energy from A to highest point between A and C (i.e., B)<br/>
+          That height is 4 kJ, not 10 → ❌<br/>
+
+        C. The rate-determining step is the one with the highest energy barrier, which is from C to D (barrier = 7 kJ) → ❌<br/>
+
+        D. Intermediates lie in valleys between steps → B and C are intermediates. D is a transition state (peak), not intermediate → ❌<br/><br/>
+
+        <b>Answer: A. The heat of reaction for overall reaction is –3 kJ mol⁻¹</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>2. What conclusion can be made from the diagram?</b><br/>
+        <img src="q2.png" style="width: 80%; max-width: 700px"><br/>
+
+        I. X is the activated complex<br/>
+        II. Heat of reaction is E₁ – E₃<br/>
+        III. Forward reaction is exothermic<br/>
+        IV. Activation energy for reverse reaction is E₁ – E₂<br/>
+        V. The energy of products is smaller than reactants<br/><br/>
+
+        A. I IV<br/>
+        B. I IV V<br/>
+        C. II III V<br/>
+        D. I III IV V<br/><br/>
+
+        <b>Solution:</b><br/>
+        I. ✅ X is the activated complex (highest energy point).<br/>
+        II. ❌ Heat of reaction is products - reactants = E<sub>2</sub> - E<sub>3</sub><br/>
+        III. ❌ Forward reaction is endothermic, since products (E₁) are higher than reactants (E₃).<br/>
+        IV. ✅ Activation energy for reverse reaction = peak (X) – products = E₁ – E₂.<br/>
+        V. ❌ Products have <b>higher</b> energy than reactants → not more stable.<br/><br/>
+
+        <b>Only correct: I and IV</b><br/>
+        <b>Answer: A. I IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+        
+        <b>3. Copper(II) nitrate is decomposed by heat as shown:</b><br/>
+        2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂<br/><br/>
+
+        Some copper(II) nitrate powder was placed inside a 5 dm³ steel container and heated. It yielded 0.2 mol of nitrogen dioxide gas after 5 seconds. What is the rate of evolution of oxygen gas?<br/><br/>
+
+        A. \( 2 \times 10^{-3} \) mol dm⁻³ s⁻¹<br/>
+        B. \( 8 \times 10^{-3} \) mol dm⁻³ s⁻¹<br/>
+        C. \( 1 \times 10^{-2} \) mol dm⁻³ s⁻¹<br/>
+        D. \( 4 \times 10^{-2} \) mol dm⁻³ s⁻¹<br/><br/>
+
+        <b>Solution:</b><br/>
+        From the equation:<br/>
+        2Cu(NO₃)₂ → 2CuO + 4NO₂ + O₂<br/>
+        Mole ratio: 4NO₂ : 1O₂<br/>
+        So, from 0.2 mol NO₂ produced:<br/>
+        \[
+        \text{mol O}_2 = \frac{1}{4} \times 0.2
+        \]
+        \[
+        = 0.05\, \text{mol}
+        \]
+        Volume = 5 dm³  Time = 5 s<br/>
+        \[
+        \text{Rate} = \frac{\text{mol}}{\text{volume} \times \text{time}}
+        \]
+        \[
+        = \frac{0.05}{5 \times 5}
+        \]
+        \[
+        = 0.002\, \text{mol dm}^{-3} \text{ s}^{-1}
+        \]
+        <b>Answer: A. \( 2 \times 10^{-3} \) mol dm⁻³ s⁻¹</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>4. If the rate equation of a reaction is R = k[A]²[B], which of the following descriptions are correct?</b><br/><br/>
+                
+        I. This is a third order reaction<br/>
+        II. The equation is obtained by experiment<br/>
+        III. When a catalyst is added, the value of k decreases<br/>
+        IV. The reaction rate is independent of the conc of B<br/>
+        V. When [A] and [B] were increased by two folds, the reaction rate will increase by eight times<br/><br/>
+        
+        A. I IV V<br/>
+        B. I II V<br/>
+        C. II V<br/>
+        D. I III<br/><br/>
+        
+        <b>Solution:</b><br/>
+        I. ✅ Order = 2 (for A) + 1 (for B) = 3rd order overall<br/>
+        II. ✅ Rate equations are always determined experimentally<br/>
+        III. ❌ A catalyst <b>increases</b> the rate constant k, not decreases<br/>
+        IV. ❌ Rate depends on [B] to the first power<br/>
+        V. ✅ If [A] and [B] both double: R = k(2[A])²(2[B]) = k × 4[A]² × 2[B] = 8k[A]²[B]<br/><br/>
+        
+        <b>Correct statements: I, II, V</b><br/>
+        <b>Answer: B. I II V</b><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+            
+        <b>5. Table below shows the result of the experiment for the reactions between A and B:</b><br/><br/>
+            
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr><th>Experiment</th><th>[A]</th><th>[B]</th><th>Initial Rate</th></tr>
+        <tr><td>1</td><td>a</td><td>b</td><td>R</td></tr>
+        <tr><td>2</td><td>a</td><td>2b</td><td>8R</td></tr>
+        <tr><td>3</td><td>2a</td><td>b</td><td>4R</td></tr>
+        <tr><td>4</td><td>2a</td><td>b/2</td><td>y</td></tr>
+        </table><br/>
+            
+        What is the value of y in terms of R?<br/><br/>
+        
+        A. R/2<br/>
+        B. R<br/>
+        C. 2R<br/>
+        D. 4R<br/><br/>
+        
+        <b>Solution:</b><br/>
+        First, determine the rate equation from experiments 1-3:<br/>
+        • Compare exp 1 & 2: [B] doubles → rate doubles → order in B = 1<br/>
+        • Compare exp 1 & 3: [A] doubles → rate increases 4× → order in A = 2<br/>
+        • Therefore: Rate = k[A]²[B]<br/><br/>
+        
+        For experiment 4:<br/>
+        Rate₄ = k(2a)²(b/2) = k × 4a² × b/2 = 2ka²b<br/>
+        Rate₁ = ka²b = R<br/>
+        Therefore: y = 2R<br/><br/>
+        
+        <b>Answer: C. 2R</b><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+        
+        <b>6. The two steps involved in the reaction X(g) + 2Y(g) → XY₂(g) are shown below:</b><br/><br/>
+            
+        X(g) + Y(g) → XY(g) &nbsp;&nbsp;&nbsp; (slow)<br/>
+        XY(g) + Y(g) → XY₂(g) &nbsp;&nbsp;&nbsp; (fast)<br/><br/>
+        
+        What is the rate of reaction for the overall reaction?<br/><br/>
+        
+        A. R = k[X]¹[Y]²<br/>
+        B. R = k[X]¹[Y]¹<br/>
+        C. R = k[X]⁰[Y]²<br/>
+        D. R = k[XY]¹<br/><br/>
+        
+        <b>Solution:</b><br/>
+        In a multi-step reaction, the <b>slowest step determines the overall rate</b>.<br/><br/>
+        
+        The slow step is: X(g) + Y(g) → XY(g)<br/>
+        Therefore, the rate equation is based on this step:<br/>
+        R = k[X]¹[Y]¹<br/><br/>
+        
+        Note: Even though the overall reaction consumes 2Y, the rate depends only on the slow step, which involves only 1Y.<br/><br/>
+        <b>Answer: B. R = k[X]¹[Y]¹</b><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>6. The reaction P + Q → products is first order with respect to P and zero order with respect to Q. If the rate constant doubles for each 10°C rise in temperature, which of the following sets of conditions will give the greatest rate of reaction?</b><br/><br/>
+        
+        A. P = 0.1 mol dm⁻³, Q = 0.2 mol dm⁻³, Temp = 40°C<br/>
+        B. P = 0.1 mol dm⁻³, Q = 0.3 mol dm⁻³, Temp = 30°C<br/>
+        C. P = 0.2 mol dm⁻³, Q = 0.2 mol dm⁻³, Temp = 30°C<br/>
+        D. P = 0.3 mol dm⁻³, Q = 0.1 mol dm⁻³, Temp = 30°C<br/><br/>
+        
+        <b>Solution:</b><br/>
+        Rate equation: R = k[P]¹[Q]⁰ = k[P]<br/>
+        Since [Q] has zero order, concentration of Q doesn't affect rate.<br/><br/>
+        
+        Let k₃₀ = rate constant at 30°C<br/>
+        At 40°C: k₄₀ = 2k₃₀ (doubles for 10°C increase)<br/><br/>
+        
+        Calculate rates:<br/>
+        A. R = k₄₀ × 0.1 = 2k₃₀ × 0.1 = 0.2k₃₀<br/>
+        B. R = k₃₀ × 0.1 = 0.1k₃₀<br/>
+        C. R = k₃₀ × 0.2 = 0.2k₃₀<br/>
+        D. R = k₃₀ × 0.3 = 0.3k₃₀<br/><br/>
+        
+        <b>Greatest rate: Option D</b><br/>
+        <b>Answer: D. P = 0.3 mol dm⁻³, Q = 0.1 mol dm⁻³, Temp = 30°C</b><br/>
+    
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+    
+        <b>7. When a reaction involving no gas occurs in a solution, which of the following does not obviously affect the rate of reaction?</b><br/><br/>
+        
+        A. Catalyst<br/>
+        B. Pressure<br/>
+        C. Temperature<br/>
+        D. Concentration<br/><br/>
+        
+        <b>Solution:</b><br/>
+        For reactions in solution with no gas involved:<br/>
+        • Catalyst ✅ - Provides alternative pathway, affects rate<br/>
+        • Temperature ✅ - Increases kinetic energy, affects rate<br/>
+        • Concentration ✅ - Higher concentration increases collision frequency<br/>
+        • Pressure ❌ - No effect on liquid/solution reactions (unlike gas reactions)<br/><br/>
+        
+        Pressure mainly affects gas reactions by changing gas concentrations. For solution reactions, pressure changes don't significantly affect the rate.<br/><br/>
+        
+        <b>Answer: B. Pressure</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>8. Figure below is the energy diagram for the reaction A → B. Which of the following descriptions concerning the figure are correct?</b><br/><br/>
+        <img src="q8.png" style="width: 80%; max-width: 700px"><br/>
+
+        I. The activation energy of the reaction is 75 kJ<br/>
+        II. The enthalpy of the reactant is 42 kJ<br/>
+        III. This is an endothermic reaction<br/>
+        IV. The heat of the reaction is 22 kJ<br/><br/>
+        
+        A. I II III<br/>
+        B. I II IV<br/>
+        C. I III IV<br/>
+        D. III IV<br/><br/>
+        
+        <b>Solution:</b><br/>
+        From the energy diagram:<br/>
+        • Reactant energy level: 20 kJ<br/>
+        • Transition state (peak): 75 kJ<br/>
+        • Product energy level: 42 kJ<br/><br/>
+        
+        I. ❌ Activation energy = Peak - Reactant = 75 - 20 = 55 kJ<br/>
+        II. ❌ The enthalpy of the reactant is 20 kJ, not 42 kJ<br/>
+        III. ✅ Products (42 kJ) > Reactants (20 kJ) → endothermic<br/>
+        IV. ✅ Heat of reaction = Products - Reactants = 42 - 20 = 22 kJ<br/><br/>
+                
+        <b>Answer: D. III IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>9. Sodium thiosulphate solutions of various concentrations and water were mixed according to the data below in conical flasks A, B, C, and D. Then 5 mL of 2 mol L⁻¹ HCl were added separately to each of the flasks. In which conical flask did the fastest rate of reaction take place?</b><br/><br/>
+        
+        A. Conc of solution = 1 mol L⁻¹, Volume of solution = 40 mL, Volume of water = 10 mL<br/>
+        B. Conc of solution = 1.5 mol L⁻¹, Volume of solution = 30 mL, Volume of water = 20 mL<br/>
+        C. Conc of solution = 2.5 mol L⁻¹, Volume of solution = 15 mL, Volume of water = 35 mL<br/>
+        D. Conc of solution = 3 mol L⁻¹, Volume of solution = 10 mL, Volume of water = 40 mL<br/><br/>
+        
+        <b>Solution:</b><br/>
+        Calculate the final concentration of sodium thiosulphate after dilution:<br/>
+        Final concentration = (Initial conc × Volume of solution) ÷ Total volume<br/>
+        Total volume = Solution + Water + HCl = 50 + 5 = 55 mL<br/><br/>
+        
+        A. Final [Na₂S₂O₃] = (1 × 40) ÷ 55 = 0.727 mol L⁻¹<br/>
+        B. Final [Na₂S₂O₃] = (1.5 × 30) ÷ 55 = 0.818 mol L⁻¹<br/>
+        C. Final [Na₂S₂O₃] = (2.5 × 15) ÷ 55 = 0.682 mol L⁻¹<br/>
+        D. Final [Na₂S₂O₃] = (3 × 10) ÷ 55 = 0.545 mol L⁻¹<br/><br/>
+        
+        <b>Highest concentration → Fastest rate</b><br/>
+        <b>Answer: B. Conc = 1.5 mol L⁻¹, Volume = 30 mL, Water = 20 mL</b><br/>
+    
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+    
+        <b>10. An investigation into the reaction rate of the reaction A + 2B → X + Y yielded the data as shown below:</b><br/><br/>
+        
+        Experiment 1: [A] = 1×10⁻³ mol L⁻¹, [B] = 2×10⁻³ mol L⁻¹, R = 2.75×10⁻⁷<br/>
+        Experiment 2: [A] = 1×10⁻³ mol L⁻¹, [B] = 4×10⁻³ mol L⁻¹, R = 5.5×10⁻⁷<br/>
+        Experiment 3: [A] = 2×10⁻³ mol L⁻¹, [B] = 2×10⁻³ mol L⁻¹, R = 1.1×10⁻⁶<br/><br/>
+        
+        The expression of the rate of reaction is:<br/><br/>
+        
+        A. R = k[A]<br/>
+        B. R = k[A][B]<br/>
+        C. R = k[A]²[B]<br/>
+        D. R = k[A][B]²<br/><br/>
+        
+        <b>Solution:</b><br/>
+        Compare experiments to find orders:<br/><br/>
+        
+        <b>Order with respect to B:</b><br/>
+        Compare exp 1 & 2: [A] constant, [B] doubles (2→4), rate doubles (2.75→5.5)<br/>
+        Rate ratio = 5.5/2.75 = 2 = 2¹ → Order in B = 1<br/><br/>
+        
+        <b>Order with respect to A:</b><br/>
+        Compare exp 1 & 3: [B] constant, [A] doubles (1→2), rate increases 4× (2.75→11)<br/>
+        Rate ratio = 11/2.75 = 4 = 2² → Order in A = 2<br/><br/>
+        
+        <b>Therefore: R = k[A]²[B]</b><br/>
+        <b>Answer: C. R = k[A]²[B]</b><br/>
+    
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+    
+        <b>11. Zn(s) + 2HCl(aq) → ZnCl₂(aq) + H₂(g)</b><br/><br/>
+        
+        Which of the following factors may affect the rate of the chemical reaction stated above?<br/><br/>
+        
+        I. Temperature<br/>
+        II. Concentration of HCl<br/>
+        III. Size of Zn pellets<br/><br/>
+        
+        A. II<br/>
+        B. I II<br/>
+        C. I III<br/>
+        D. I II III<br/><br/>
+        
+        <b>Solution:</b><br/>
+        I. ✅ Temperature - Higher temperature increases reaction rate<br/>
+        II. ✅ Concentration of HCl - Higher [HCl] increases collision frequency<br/>
+        III. ✅ Size of Zn pellets - Smaller pellets = larger surface area = faster rate<br/><br/>
+        
+        All three factors affect the rate of this heterogeneous reaction.<br/><br/>
+        
+        <b>Answer: D. I II III</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>   
+
+        <b>12. When calcium carbonate reacts with excess acid, carbon dioxide is produced. The reaction may result in different gas volume–time curves depending on the conditions.</b><br/>
+        If curve <b>P</b> is shifted towards curve <b>Q</b>, what change was likely made?<br/><br/>
+        <img src="q12.png" style="width: 80%; max-width: 700px"><br/>
+
+        A. By adding a catalyst<br/>
+        B. By decreasing the concentration of the acid<br/>
+        C. By increasing the mass of calcium carbonate<br/>
+        D. By carrying out the reaction at a lower temperature<br/><br/>
+
+        <b>Solution:</b><br/>
+        Curve <b>P</b> has a higher total gas volume and steeper slope → faster rate and more gas.<br/>
+        Curve <b>Q</b> has less gas produced and a slower rate.<br/><br/>
+        To shift from P to Q, we need to slow the rate <i>and</i> reduce the amount of CO₂ produced.<br/>
+        Only C (increasing CaCO₃) increases the amount of product, not reduce it.<br/>
+        Catalyst (A) only increases rate — doesn't change volume.<br/>
+        Lower temperature (D) slows rate but doesn't affect amount much.<br/>
+        <b>Decreasing acid concentration</b> lowers both rate and total gas — matches curve Q.<br/><br/>
+
+        <b>Answer: B. By decreasing the concentration of the acid</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>13. The data below shows the results of experiments for the reaction between P and Q:</b><br/>
+        Experiment I: [P] = 0.125 mol dm⁻³, [Q] = 0.224 mol dm⁻³, Rate = 0.03 mol dm⁻³s⁻¹<br/>
+        Experiment II: [P] = 0.250 mol dm⁻³, [Q] = 0.224 mol dm⁻³, Rate = 0.06 mol dm⁻³s⁻¹<br/>
+        Experiment III: [P] = 0.250 mol dm⁻³, [Q] = 0.112 mol dm⁻³, Rate = 0.015 mol dm⁻³s⁻¹<br/><br/>
+
+        What is the order of this reaction?<br/>
+        A. 0<br/>
+        B. 1<br/>
+        C. 2<br/>
+        D. 3<br/><br/>
+
+        <b>Solution:</b><br/>
+        Compare Experiment I and II: [P] doubles, [Q] constant → rate doubles → order in P is 1.<br/>
+        Compare Experiment II and III: [P] constant, [Q] halves → rate becomes 0.06 → 0.015 = ×1/4 → order in Q is 2.<br/>
+        So overall order = 1 (from P) + 2 (from Q) = 3<br/><br/>
+
+        <b>Answer: D. 3</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>14. A mixture of 0.1 mol of N₂ and 0.3 mol of H₂ is sealed in a 2 L container at a certain condition and allowed to react: </b><br/>
+        N₂(g) + 3H₂(g) → 2NH₃(g)<br/>
+        After 10 minutes, 0.22 mol of H₂ remains unreacted.<br/>
+        What is the rate of reaction in terms of change in H₂ concentration over the first 10 minutes?<br/>
+        A. 0.004 mol L⁻¹min⁻¹<br/>
+        B. 0.008 mol L⁻¹min⁻¹<br/>
+        C. 0.022 mol L⁻¹min⁻¹<br/>
+        D. 0.110 mol L⁻¹min⁻¹<br/><br/>
+
+        <b>Solution:</b><br/>
+        Initial H₂ = 0.3 mol → Final H₂ = 0.22 mol → Used = 0.08 mol<br/>
+        In 2 L container: Δ[H₂] = 0.08 mol ÷ 2 L = 0.04 mol L⁻¹<br/>
+        Rate = Δ[H₂] / time = 0.04 / 10 = 0.004 mol L⁻¹min⁻¹<br/><br/>
+
+        <b>Answer: A. 0.004 mol L⁻¹min⁻¹</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>15. By which of the following is the rate constant <i>k</i> of a chemical reaction influenced?</b><br/>
+        A. Concentration of products<br/>
+        B. Volume of container<br/>
+        C. Temperature<br/>
+        D. Pressure<br/><br/>
+
+        <b>Solution:</b><br/>
+        The rate constant <i>k</i> depends only on temperature and the nature of the reaction. It is not affected by concentrations, pressure (unless it changes T), or volume.<br/><br/>
+
+        <b>Answer: C. Temperature</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>16. Which of the following may affect the rate constant for a chemical reaction?</b><br/>
+        I. Change in concentration<br/>
+        II. Change in pressure<br/>
+        III. Change in temperature<br/>
+        IV. Adding a catalyst<br/>
+        A. I II III<br/>
+        B. I II IV<br/>
+        C. II III IV<br/>
+        D. III IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        The rate constant \( k \) is only affected by temperature and the presence of a catalyst. Concentration and pressure affect the rate, not the value of \( k \).<br/>
+        <b>Answer: D. III IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>17. What is the best explanation for the speeding up of a chemical reaction by a catalyst?</b><br/>
+        A. It increases the kinetic energy of the reactant molecules<br/>
+        B. It makes the enthalpy change ΔH more negative<br/>
+        C. It increases the equilibrium constant<br/>
+        D. It lowers the energy barrier for the reaction<br/><br/>
+
+        <b>Solution:</b><br/>
+        A catalyst lowers the activation energy, so more molecules have enough energy to react.<br/>
+        <b>Answer: D. It lowers the energy barrier for the reaction</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>18. If the rate equation for 2A + B + H⁺ → C + D is R = k[A][H⁺], then the reaction is:</b><br/>
+        A. Zero-order reaction<br/>
+        B. First-order reaction<br/>
+        C. Second-order reaction<br/>
+        D. Third-order reaction<br/><br/>
+
+        <b>Solution:</b><br/>
+        The total order is the sum of the powers in the rate law: (1 for [A]) + (1 for [H⁺]) = 2.<br/>
+        <b>Answer: C. Second-order reaction</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>19. Which of the following has the lowest reaction rate at room temperature?</b><br/>
+        A. 2H₂(g) + O₂(g) → 2H₂O(l)<br/>
+        B. Cu²⁺(aq) + 4NH₃(aq) → [Cu(NH₃)₄]²⁺(aq)<br/>
+        C. CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)<br/>
+        D. 5Fe²⁺(aq) + MnO₄⁻(aq) + 8H⁺(aq) → 5Fe³⁺(aq) + Mn²⁺(aq) + 4H₂O(l)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Option A is a combustion reaction, which is fast. B and D are ionic reactions in aqueous solution, also fast. C involves a solid (CaCO₃), and reactions involving solids are typically slower.<br/>
+        <b>Answer: C. CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>20. Which factors influence the rate of chemical reactions?</b><br/>
+        I. Catalyst<br/>
+        II. Temperature<br/>
+        III. Concentration of reactants<br/>
+        IV. Surface area of reactants<br/>
+        A. I III<br/>
+        B. II III<br/>
+        C. I II IV<br/>
+        D. I II III IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        All of the listed factors influence reaction rate. Surface area affects reactions involving solids.<br/>
+        <b>Answer: D. I II III IV</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>21. A₂(g) + 3B₂(g) → 2AB₃(g) is a single-step reaction with rate R. If [A₂] is tripled and the volume is doubled, the new rate is:</b><br/>
+        A. \( \frac{3}{4}R \)<br/>
+        B. \( \frac{7}{4}R \)<br/>
+        C. \( \frac{3}{16}R \)<br/>
+        D. \( \frac{81}{16}R \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        For a single-step reaction, the rate law is: <br/>
+        \[
+        R = k[A_2]^1[B_2]^3
+        \]
+
+        Let’s assume initial concentrations of [A₂] = 1, [B₂] = 1.<br/>
+        So initial rate \( R = k \cdot 1 \cdot 1^3 = k \).<br/><br/>
+
+        Now triple [A₂] → 3, and double the volume → all concentrations are halved.<br/>
+        So new [A₂] = \( \frac{3}{2} \), [B₂] = \( \frac{1}{2} \)<br/><br/>
+
+        New rate:
+        \[
+        R_{\text{new}} = k \cdot \left(\frac{3}{2}\right)^1 \cdot \left(\frac{1}{2}\right)^3 = k \cdot \frac{3}{2} \cdot \frac{1}{8} = k \cdot \frac{3}{16}
+        \]
+
+        So,
+        \[
+        R_{\text{new}} = \frac{3}{16} R
+        \]
+
+        <b>Answer: C. \( \frac{3}{16}R \)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>22. The rate equation for X + Y₂ → XY₂ is R = k[X]²[Y₂]⁰. Which of the following is correct?</b><br/>
+        A. When [X] is doubled, the rate is also doubled<br/>
+        B. [X] does not affect the rate<br/>
+        C. Changing [X] does not affect the value of k<br/>
+        D. Y₂ does not take part in the rate-determining step<br/><br/>
+
+        <b>Solution:</b><br/>
+        The reaction rate depends only on [X]², and [Y₂] has no effect (exponent is 0). D is true — if [Y₂] has no effect, it’s not in rate-determining step.<br/>
+        <b>Answer: D. Y₂ does not take part in the rate-determining step</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>23. Given the reaction: 4NH₃ + 5O₂ → 4NO + 6H₂O</b><br/>
+        If the rates of change of concentrations are represented as:<br/>
+        R<sub>NH₃</sub>, R<sub>O₂</sub>, R<sub>NO</sub>, R<sub>H₂O</sub>, the correct relationship is:<br/>
+        A. \( \frac{4}{5} R_{NH₃} = R_{O₂} \)<br/>
+        B. \( \frac{5}{6} R_{O₂} = R_{H₂O} \)<br/>
+        C. \( \frac{2}{3} R_{NH₃} = R_{H₂O} \)<br/>
+        D. \( \frac{4}{5} R_{O₂} = R_{NO} \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Balanced equation:<br/>
+        4NH₃ + 5O₂ → 4NO + 6H₂O<br/>
+        So:  
+        \[
+        \frac{R_{NH₃}}{4} = \frac{R_{O₂}}{5} = \frac{R_{NO}}{4} = \frac{R_{H₂O}}{6}
+        \]<br/>
+
+        Check options:<br/>
+
+        A. \( \frac{4}{5} R_{NH₃} = R_{O₂} \) ← ❌ Wrong. Correct is \( R_{O₂} = \frac{5}{4} R_{NH₃} \)<br/>
+        B. \( \frac{5}{6} R_{O₂} = R_{H₂O} \) ← ❌ Incorrect. Should be \( R_{H₂O} = \frac{6}{5} R_{O₂} \)<br/>
+        C. \( \frac{2}{3} R_{NH₃} = R_{H₂O} \) ← ❌ Incorrect. Should be \( R_{H₂O} = \frac{3}{2} R_{NH₃} \)<br/>
+        D. \( \frac{4}{5} R_{O₂} = R_{NO} \) ← ✅ Correct.<br/><br/>
+
+        <b>Answer: D. \( \frac{4}{5} R_{O₂} = R_{NO} \)</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>24. The rate of reaction is given by R = k[A]²[B].</b><br/>
+        At certain concentrations, the rate is \( x \text{ mol L}^{-1} \text{s}^{-1} \).<br/>
+        What will the rate be if [A] is doubled and [B] is halved?<br/>
+        A. \( \frac{1}{2}x \)<br/>
+        B. \( 2x \)<br/>
+        C. \( 3x \)<br/>
+        D. \( 4x \)<br/><br/>
+
+        <b>Solution:</b><br/>
+        New rate = \( k \times (2[A])^2 \times (0.5[B]) = k[A]^2[B] \times 4 \times 0.5 = 2x \)<br/>
+        <b>Answer: B. 2x</b><br/><br/>
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
