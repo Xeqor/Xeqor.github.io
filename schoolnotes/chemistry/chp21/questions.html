@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <title>Xap's Notes</title>
+    <link rel="icon" href="../../school_notes_logo_Gupdated.png" type="image/png" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: monospace;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: black;
+        }
+
+        .topbar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .topbar-text {
+            font-size: 24px;
+            margin-left: 12px;
+        }
+
+        .content {
+            padding: 25px;
+            padding-bottom: 0px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        @media (min-width: 768px) {
+            .topbar-text {
+                font-size: 30px;
+            }
+
+            .content {
+                font-size: 30px;
+            }
+
+            .toggle-label {
+                font-size: 30px;
+            }
+        }
+
+        .topbar-link {
+            margin-left: 15px;
+            padding-bottom: 0px;
+            font-size: 30px;
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+            background: white;
+            color: black;
+            margin-top: 25px;
+            margin-left: 30px;
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 2vw;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .toggle-label:hover {
+            background: darkgray;
+        }
+
+        .content-text, .content-title, .content-center {
+            color: white;
+            margin-left: 10px;
+            padding: 30px;
+            padding-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .hidden-text {
+            display: none;
+            color: lightgrey;
+            margin-left: 30px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .toggle:checked ~ .hidden-text {
+            display: block;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="../../school_notes_logo_updated.png" alt="Logo"/>
+    <div class="topbar-text">Xap's School Notes</div>
+    <a class="topbar-link" href="https://xeqor.github.io/schoolnotes/index.html">[Go back]</a>
+  </div>
+
+    <div class="content">
+        <b><u>Chapter 18: Solutions and properties</u></b><br/>
+        <b><u>Questions (with solutions!)</u></b><br/><br/>
+
+        <b style="color: red">NOTE: The solutions are wrote by ChatGPT.</b><br/>
+        <b style="color: red">I am aware of the solutions may be bad/confusing (I tried to edit the ones that may be confusing). If you are still confused on any question, feel free to ask someone that's good at the topic (or ask ChatGPT for more clarification lol) or you can just skip the question for now, and come back later.</b><br/>
+        <b style="color: red">This also means that the solution MAY be wrong (or I wrote the questions wrong for ChatGPT).</b><br/><br/>
+
+        <b>Update: For later questions I changed to using Claude, so it should be more accurate!</b><br/><br/>
+
+        <hr style="border: none; height: 2px; background: #303030;"><br/>
+
+        <b>1. In the equilibrium:</b><br/>
+        C<sub>(s)</sub> + CO₂<sub>(g)</sub> ⇌ 2CO<sub>(g)</sub>  ΔH = +111 kJ/mol<br/>
+        If C<sub>(s)</sub> is added, the equilibrium will ___.<br/>
+        A. shift to left<br/>
+        B. shift to right<br/>
+        C. not affected<br/>
+        D. shift to the right then shift to left<br/><br/>
+
+        <b>Solution:</b><br/>
+        Solids do not appear in K expressions, so adding C<sub>(s)</sub> does not change any concentrations.<br/>
+        <b>Answer: C. not affected</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>2. In:
+        2CrO₄²⁻<sub>(aq)</sub> + 2H⁺<sub>(aq)</sub> ⇌ Cr₂O₇²⁻<sub>(aq)</sub> + H₂O<sub>(l)</sub></b><br/>
+        The solution is yellow/orange. To make it more reddish‐orange (more Cr₂O₇²⁻), add ___.<br/>
+        A. H⁺<br/>
+        B. OH⁻<br/>
+        C. H₂O<br/>
+        D. Cr³⁺<br/><br/>
+
+        <b>Solution:</b><br/>
+        Adding H⁺ drives the equilibrium right, producing more dichromate (reddish‐orange).<br/>
+        <b>Answer: A. H⁺</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>3. For P + Q ⇌ 3R, with forward rate V₁ and reverse V₂, the equilibrium constant K = ___.</b><br/>
+        A. K = V₁/V₂<br/>
+        B. K = V₂/V₁<br/>
+        C. K = k₁/k₂<br/>
+        D. K = k₂/k₁<br/><br/>
+
+        <b>Solution:</b><br/>
+        K = (forward rate constant)/(reverse rate constant) = k₁/k₂. Since V₁ ∝ k₁ and V₂ ∝ k₂ at equilibrium, K = V₁/V₂.<br/>
+        <b>Answer: A. K = V₁/V₂</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>4. A<sub>(g)</sub> + 3B<sub>(g)</sub> ⇌ 2C<sub>(g)</sub> + 91.96 kJ</b><br/>
+        What shifts equilibrium left?<br/>
+        A. Add catalyst<br/>
+        B. Increase temperature<br/>
+        C. Increase temperature and decrease pressure<br/>
+        D. Decrease temperature and increase pressure<br/><br/>
+
+        <b>Solution:</b><br/>
+        Forward is exothermic. Raising T shifts left; lowering P (more moles left) also shifts left.<br/> 
+        <b>Answer: C. Increase temperature and decrease pressure</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>5. H₂<sub>(g)</sub> + I₂<sub>(g)</sub> ⇌ 2HI<sub>(g)</sub>, K = 60 at 450 °C.</b><br/>
+        If initial moles are [H₂]=2, [I₂]=0.41 (in 1 L), find [HI] at equilibrium.<br/>
+        A. \(75\)<br/>
+        B. \(49.2\)<br/>
+        C. \(7.0\)<br/>
+        D. \(0.12\)<br/><br/>
+        
+        <b>Solution:</b><br/>
+        At equilibrium, let \([\mathrm{HI}] = x\). Construct ICE table:<br/><br/>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th> </th><th>\([\mathrm{H_2}]\)</th><th>\([\mathrm{I_2}]\)</th><th>\([\mathrm{HI}]\)</th>
+        </tr>
+        <tr>
+            <td>Initial conc/\(molL^{-1}\)</td><td>\(2.00\)</td><td>\(0.41\)</td><td>\(0\)</td>
+        </tr>
+        <tr>
+            <td>Change in conc/\(molL^{-1}\)</td><td>\(-\tfrac{x}{2}\)</td><td>\(-\tfrac{x}{2}\)</td><td>\(+x\)</td>
+        </tr>
+        <tr>
+            <td>Equilibrium conc/\(molL^{-1}\)</td>
+            <td>\(2.00 - \tfrac{x}{2}\)</td>
+            <td>\(0.41 - \tfrac{x}{2}\)</td>
+            <td>\(x\)</td>
+        </tr>
+        </table><br/>
+
+        Equilibrium expression:
+        \[
+        K_c = \frac{[\mathrm{HI}]^2}{[\mathrm{H_2}]\,[\mathrm{I_2}]} 
+        \]
+        \[
+        60 = \frac{x^2}{\bigl(2.00 - \tfrac{x}{2}\bigr)\,\bigl(0.41 - \tfrac{x}{2}\bigr)}
+        \]
+        Solve for \(x\) (e.g. by rearranging to a quadratic and using the positive root) to find
+        \[
+        x \approx 7.0.
+        \]
+        <b>Answer: C. \(7.0\)</b><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>6. 2X + Y ⇌ 2Z. Y is gas. Lowering pressure shifts equilibrium forward. Which must be true?</b><br/>
+        A. X and Z are solids<br/>
+        B. X, Y, Z are gases<br/>
+        C. X is gas and Z is solid<br/>
+        D. X is solid and Z is gas<br/><br/>
+
+        <b>Solution:</b><br/>
+        Forward makes more gas moles only if products have more gas than reactants. Reactants gas moles = 1 (Y). Products gas = 2 (2Z). So Z is gas, X must be solid.<br/>
+        <b>Answer: D. X is solid and Z is gas</b><br/><br/>
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>7. When the reaction</b><br/>
+        aA<sub>(g)</sub> + bB<sub>(g)</sub> ⇌ cC<sub>(g)</sub> + dD<sub>(g)</sub><br/>
+        the relationships between the percentage of A (A%) in the reacting mixture, the pressure (p) and the temperature (t) are shown in the figure, from which we can come to the correct conclusion that the forward reaction is ___?<br/><br/>
+        <img src="q7.png" style="width: 70%; max-width: 700px"><br/>
+        
+        A. Forward reaction is endothermic, a + b < c + d<br/>
+        B. Forward reaction is endothermic, a + b > c + d<br/>
+        C. Forward reaction is exothermic, a + b < c + d<br/>
+        D. Forward reaction is exothermic, a + b > c + d<br/><br/>
+
+        <b>Solution:</b><br/>
+        1. At higher T (t₁) the equilibrium shifts toward products (A % ↓), so the forward reaction is endothermic.<br/>
+        2. As pressure ↑, A % ↓ (forward favored), so forward produces fewer gas moles → a + b > c + d.<br/><br/>
+
+        <b>Answer: B. Forward reaction is endothermic, a + b > c + d</b><br/>
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>8. Which of the following equilibrium will not be affected by a change in volume?</b><br/>
+        A. 2 NO₂<sub>(g)</sub> ⇌ N₂O₄<sub>(g)</sub><br/>
+        B. H₂<sub>(g)</sub> + Cl₂<sub>(g)</sub> ⇌ 2 HCl<sub>(g)</sub><br/>
+        C. NH₄NO₃<sub>(s)</sub> ⇌ N₂O<sub>(g)</sub> + 2 H₂O<sub>(g)</sub><br/>
+        D. CH₃CH₂OH<sub>(g)</sub> ⇌ CH₂=CH₂<sub>(g)</sub> + H₂O<sub>(g)</sub><br/><br/>
+
+        <b>Solution:</b><br/>
+        Count gaseous moles on each side:<br/>
+        A: 2 ⇌ 1 → affected<br/>
+        B: 2 ⇌ 2 → <b>not</b> affected<br/>
+        C: 0 ⇌ 3 → affected (solid doesnt count)<br/>
+        D: 1 ⇌ 2 → affected<br/>
+        <b>Answer: B. H₂<sub>(g)</sub> + Cl₂<sub>(g)</sub> ⇌ 2 HCl<sub>(g)</sub></b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>9. Which statement about a chemical equilibrium is correct?</b><br/>
+        A. Both the forward and reverse reactions stop at equilibrium<br/>
+        B. The concentrations of reactants become zero<br/>
+        C. The rate of the forward reaction equals the rate of the reverse reaction<br/>
+        D. A change in conditions cannot shift the equilibrium position<br/><br/>
+
+        <b>Solution:</b><br/>
+        At equilibrium the reaction continues but forward rate = reverse rate, and changing conditions does shift it.<br/>
+        <b>Answer: C. The rate of the forward reaction equals the rate of the reverse reaction</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>10. The purpose of adding a catalyst to a reversible reaction is to:</b><br/>
+        A. Shift the equilibrium toward products<br/>
+        B. Change the equilibrium composition<br/>
+        C. Shorten the time to reach equilibrium<br/>
+        D. Change the reaction enthalpy ΔH<br/><br/>
+
+        <b>Solution:</b><br/>
+        A catalyst speeds both forward and reverse equally, so it only makes equilibrium occur faster.<br/>
+        <b>Answer: C. Shorten the time to reach equilibrium</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>11. Which statement about activation energy is incorrect?</b><br/>
+        A. Activation energy changes with temperature<br/>
+        B. Forward and reverse activation energies differ<br/>
+        C. Activation energy is used to break reactant bonds<br/>
+        D. Generally, larger activation energy → slower reaction<br/><br/>
+
+        <b>Solution:</b><br/>
+        Activation energy is a fixed barrier (does not change with T), but forward/reverse values differ and higher \(E_a\) slows rate.<br/>
+        <b>Answer: A. Activation energy changes with temperature</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>12. Which change will certainly increase the amount of products at equilibrium?</b><br/>
+        A. Adding a catalyst<br/>
+        B. Increasing the pressure<br/>
+        C. Increasing the temperature<br/>
+        D. Increasing the concentration of reactants<br/><br/>
+
+        <b>Solution:</b><br/>
+        Only changing reactant concentration directly shifts equilibrium toward products (in absence of other specifics).<br/>
+        <b>Answer: D. Increasing the concentration of reactants</b><br/><br/>
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>13.<br/>
+        Which of the following description about the reversible reaction is/are correct?<br/>
+        \[
+        2\,\mathrm{SO_{2(g)}} + \mathrm{O_{2(g)}} \;\rightleftharpoons\; 2\,\mathrm{SO_{3(g)}},
+        \]
+        where a catalyst is used only in the forward direction, which statements are correct?</b><br/>
+        I. Reacting 2 mol of SO₂ with excess O₂ can yield 2 mol of SO₃.<br/>
+        II. At equilibrium, the rate of consumption of SO₂ equals twice the rate of consumption of O₂.<br/>
+        III. At equilibrium, \([\mathrm{SO_2}]:[\mathrm{O_2}]:[\mathrm{SO_3}] = 2:1:2\).<br/>
+        A. I<br/>
+        B. II<br/>
+        C. I III<br/>
+        D. II III<br/><br/>
+
+        <b>Solution:</b><br/>
+        I. False — because the reaction is reversible, you generally cannot convert 100% to SO₃.<br/>
+        II. True — stoichiometry dictates \(\;r_{\mathrm{SO_2}} = 2\,r_{\mathrm{O_2}}\).<br/>
+        III. False — equilibrium concentrations depend on K, not simply stoichiometric ratio.<br/>
+        <b>Answer: B. II</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>14. Which equilibrium will move forward when temperature decreases <b>and</b> pressure increases?</b><br/>
+        A. \(\mathrm{H_{2(g)}} + \mathrm{I_{2(g)}} \;\rightleftharpoons\; 2\,\mathrm{HI_{(g)}} + Q\)<br/>
+        B. \(\mathrm{N_{2(g)}} + 3\,\mathrm{H_{2(g)}} \;\rightleftharpoons\; 2\,\mathrm{NH_{3(g)}} + Q\)<br/>
+        C. \(\mathrm{N_{2}O_{4(g)}} \;\rightleftharpoons\; 2\,\mathrm{NO_{2(g)}} - Q\)<br/>
+        D. \(\mathrm{C(s)} + \mathrm{H_{2}O_{(g)}} \;\rightleftharpoons\; \mathrm{CO_{(g)}} + \mathrm{H_{2(g)}} - Q\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Need exothermic forward (favored by ↓T) <b>and</b> fewer gas moles forward (favored by ↑P).<br/>
+        A: equal gas moles (no P effect).<br/>
+        B: forward exothermic and 4→2 moles (↓T and ↑P both favor forward).<br/>
+        C,D are endothermic forward or increase moles.  
+        <b>Answer: B. \(\mathrm{N_{2(g)}} + 3\,\mathrm{H_{2(g)}} \;\rightleftharpoons\; 2\,\mathrm{NH_{3(g)}} + Q\)<br/></b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>15. A nitrogen-hydrogen mixture (1:3 mole ratio) reaches equilibrium to form NH₃ when half the N₂ has reacted. If total pressure then is \(P\), what is the partial pressure of NH₃?</b><br/>
+        A. \(\frac{P}{3}\)  B. \(\frac{P}{4}\)  C. \(\frac{P}{6}\)  D. \(\frac{P}{8}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Initial moles: N₂=1, H₂=3.<br/>
+        Extent: 50% of N₂ reacted → reacted N₂=0.5 → H₂ consumed=1.5 → NH₃ produced=2×0.5=1.<br/>
+        Remaining: N₂=0.5, H₂=1.5, NH₃=1 → total 3 moles.<br/>
+        \(p_{\rm NH_3} = \frac{1}{3}P\).<br/>
+        <b>Answer: A. \(\frac{P}{3}\)</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>16. In a 1 L vessel at 320 K:<br/>
+        3 mol PCl₅<sub>(g)</sub> ⇌ 1 mol PCl₃<sub>(g)</sub> + Cl₂<sub>(g)</sub>.  
+        If \(K_c = 0.50\), how many moles of PCl₅ remain at equilibrium?</b><br/>
+        A. 2.314  B. 2.175  C. 0.825  D. 0.626<br/><br/>
+
+        <b>Solution:</b><br/>
+        Let \(x\) = moles of PCl₅ dissociated at equilibrium.<br/>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th></th><th>PCl₅</th><th>PCl₃</th><th>Cl₂</th>
+        </tr>
+        <tr>
+            <td>Initial conc/\(molL^{-1}\)</td><td>3.00</td><td>1.00</td><td>0.00</td>
+        </tr>
+        <tr>
+            <td>Change in conc/\(molL^{-1}\)</td><td>–x</td><td>+x</td><td>+x</td>
+        </tr>
+        <tr>
+            <td>Equilibrium conc/\(molL^{-1}\)</td><td>\(3.00 - x\)</td>
+                                <td>\(1.00 + x\)</td>
+                                <td>\(0 + x\)</td>
+        </tr>
+        </table><br/>
+
+        Equilibrium expression:
+        \[
+        K_c = \frac{[\mathrm{PCl_3}]\,[\mathrm{Cl_2}]}{[\mathrm{PCl_5}]}
+        \]
+        \[
+        = \frac{(1 + x)\,(x)}{(3 - x)}
+        \]
+        \[
+        = 0.50.
+        \]
+
+        Solve for \(x\):
+        \[
+        (1 + x)\,x = 0.5\,(3 - x)
+        \]
+        \[
+        x^2 + x = 1.5 - 0.5x
+        \]
+        \[
+        x^2 + 1.5x - 1.5 = 0.
+        \]
+        Use the positive root:
+        \[
+        x = \frac{-1.5 + \sqrt{1.5^2 + 6}}{2}
+        \]
+        \[
+        \approx 0.686.
+        \]
+
+        Moles of PCl₅ remaining:
+        \[
+        3.00 - 0.686 = 2.314.
+        \]
+
+        <b>Answer: A. 2.314</b><br/>
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>17. For 2SO₂<sub>(g)</sub> + O₂<sub>(g)</sub> ⇌ 2SO₃<sub>(g)</sub> + Q, which methods increase percent conversion of SO₂?</b><br/>
+        I. Increase temperature<br/>
+        II. Decrease temperature<br/>
+        III. Increase pressure<br/>
+        IV. Decrease pressure<br/>
+        A. I III<br/>
+        B. I IV<br/>
+        C. II III<br/>
+        D. II IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        Reaction is exothermic forward; more gas moles → left. To increase SO₃ (i.e. conversion of SO₂) you want forward favored:  
+        • Lower T (II) favors exothermic forward.<br/>
+        • Higher P (III) favors fewer moles (right).<br/>
+        <b>Answer: C. II III</b><br/><br/>
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>18. By lowering the temperature and increasing the pressure, which equilibrium shifts toward products (forward)?</b><br/>
+        A. 2 HCl<sub>(g)</sub> ⇌ H₂<sub>(g)</sub> + Cl₂<sub>(g)</sub> - Q<br/>
+        B. 2 SO₃<sub>(g)</sub> ⇌ 2 SO₂<sub>(g)</sub> + O₂<sub>(g)</sub> - Q<br/>
+        C. CaO<sub>(s)</sub> + CO₂<sub>(g)</sub> ⇌ CaCO₃<sub>(s)</sub> + Q<br/>
+        D. CO<sub>(g)</sub> + H₂O<sub>(g)</sub> ⇌ CO₂<sub>(g)</sub> + H₂<sub>(g)</sub> + Q<br/><br/>
+
+        <b>Solution:</b><br/>
+        We need forward exothermic (↓T favors) and fewer gas moles forward (↑P favors):<br/>
+        A: forward moles 2→2 (no pressure effect).<br/>
+        B: forward is endothermic (–Q = heat absorbed).<br/>
+        C: forward exothermic (+Q) and gas moles 1→0 → fits.<br/>
+        D: forward exothermic but gas moles 2→2 (no pressure effect).<br/>
+        <b>Answer: C. CaO<sub>(s)</sub> + CO₂<sub>(g)</sub> ⇌ CaCO₃<sub>(s)</sub> + Q</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>19. For X<sub>(g)</sub> ⇌ Y<sub>(g)</sub> + Z<sub>(g)</sub> at constant total pressure P,<br/>
+        the equilibrium partial pressure of X is \(p_X = \tfrac{1}{7}P\). What is \(K_p\)?</b><br/>
+        A. \(\tfrac{6}{7}P\)<br/>
+        B. \(\tfrac{9}{7}P\)<br/>
+        C. \(\tfrac{18}{7}P\)<br/>
+        D. \(\tfrac{36}{7}P\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        Since p<sub>x</sub> = \(\frac{1}{7}P\) and total pressure is P:<br/>
+
+        p<sub>y</sub> + p<sub>z</sub> + p<sub>x</sub> = P<br/>
+        p<sub>y</sub> + p<sub>z</sub> = P - \(\frac{1}{7}P\) = \(\frac{6}{7}P\)<br/>
+
+        Y and Z are produced in equal amounts (because both their coefficient is 1), so p<sub>y</sub> = p<sub>z</sub> = \(\frac{3}{7}P\)<br/>
+        Therefore: K<sub>p</sub> = \(\frac{p_y \times p_z}{p_x}\) = \(\frac{\frac{3}{7}P \times \frac{3}{7}P}{\frac{1}{7}P}\) = \(\frac{9}{7}P\)<br/>
+        <b>Answer: B. \(\tfrac{9}{7}P\)</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>20. N₂ and H₂ mixed 1:3 reach equilibrium NH₃ with mole fraction NH₃ = 40%.<br/>
+        What is mole fraction of N₂?</b><br/>
+        A. 15% B. 20% C. 40% D. 60%<br/><br/>
+
+        <b>Solution:</b><br/>
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th> </th>
+            <th>N₂</th>
+            <th>H₂</th>
+            <th>NH₃</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Initial conc/\(molL^{-1}\)</td>
+            <td>1.00</td>
+            <td>3.00</td>
+            <td>0.00</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>Change in conc/\(molL^{-1}\)</td>
+            <td>–x</td>
+            <td>–3x</td>
+            <td>+2x</td>
+            <td>–2x</td>
+        </tr>
+        <tr>
+            <td>Equilibrium conc/\(molL^{-1}\)</td>
+            <td>1.00 – x</td>
+            <td>3.00 – 3x</td>
+            <td>2x</td>
+            <td>4.00 – 2x</td>
+        </tr>
+        </table><br/>
+
+        Mole fraction NH₃ = \(\tfrac{2x}{4 - 2x} = 0.40\).<br/>
+        We can then calculate that x = 0.5714.<br/>
+
+        \[
+        n_{\mathrm{N_2}} = 1 - x
+        \]
+        \[
+        = 0.4286
+        \]<br/>
+
+        \[
+        n_{\rm tot} = 4 - 2x
+        \]
+        \[
+        = 2.8572
+        \]<br/>
+
+        \[
+        \text{Mole fraction of N}_2 
+        = \frac{0.4286}{2.8572} \approx 0.15
+        \]
+        <b>Answer: A. 15%</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>21. 2 NO₂<sub>(g)</sub> ⇌ 2 NO<sub>(g)</sub> + O₂<sub>(g)</sub>. Degree dissociation of NO₂ is 25% from 3 mol initial.<br/>
+        What is \(K_c\)?</b><br/>
+        A. 0.0417 B. 0.375 C. 2.667 D. 24<br/><br/>
+
+        <b>Solution:</b><br/>
+        Initial NO₂ = 3 → reacted = 0.75 → [NO₂]ₑq = 2.25, [NO] = 0.75, [O₂] = 0.375 (in same volume).<br/>
+        \[
+        K_c = \frac{[NO]^2\,[O₂]}{[NO₂]^2}
+        \]
+        \[
+        = \frac{0.75^2 \times 0.375}{2.25^2}
+        \]
+        \[
+        = \frac{0.5625 \times 0.375}{5.0625}
+        \]
+        \[
+        = 0.0417.
+        \]
+        <b>Answer: A. 0.0417</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>22. Which reaction has \(K_c = \tfrac{[C]^3\,[D]}{[A]^2\,[B]}\)?</b><br/>
+        A. 3 C + 2 A → D + B<br/>
+        B. 2 A + B → 3 C + D<br/>
+        C. 3 C + D → 2 A + B<br/>
+        D. C + 3 D → A + 2 B<br/><br/>
+
+        <b>Solution:</b><br/>
+        Write the forward reaction such that products have C³D¹ and reactants A²B¹: that is<br/>
+        \[
+        2A + B \rightleftharpoons 3C + D.
+        \]
+        <b>Answer: B. 2 A + B → 3 C + D</b><br/><br/>
+
+        <b>23. NH₄Cl(s) ⇌ NH₄⁺(aq) + Cl⁻(aq) ΔH = +3.5 kcal/mol</b><br/>
+        Which change shifts equilibrium to the right?<br/>
+        A. Decrease T to 15 °C<br/>
+        B. Increase T to 35 °C<br/>
+        C. Dissolve NaCl(s) in the mixture<br/>
+        D. Dissolve CH₃COONH₄(s) in the mixture<br/><br/>
+
+        <b>Solution:</b><br/>
+        The forward reaction is endothermic (ΔH > 0). Raising T favors the endothermic direction (right). Adding NaCl or NH₄OAc adds common ions, shifting left.<br/>
+        <b>Answer: B. Increase the temperature to 35 °C</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>24. 2 NO₂<sub>(g)</sub> ⇌ N₂O₄<sub>(g)</sub> ΔH = –57 kJ/mol<br/>
+        Which changes shift equilibrium to the right?</b><br/>
+        I. Increase pressure  <br/>
+        II. Decrease temperature  <br/>
+        III. Increase volume  <br/>
+        IV. Remove some N₂O₄<sub>(g)</sub><br/>
+        A. I only  B. I & II & III  C. I & II & IV  D. II & III & IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        Right side has fewer moles (1 vs. 2) → ↑P favors right, ↓T favors exothermic forward. Removing product drives forward. Increasing volume (↓P) opposes forward.  
+        <b>Answer: C. I, II, IV</b><br/><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>25. 3 P<sub>(g)</sub> + Q<sub>(g)</sub> ⇌ x R<sub>(g)</sub> + 2 S<sub>(g)</sub></b><br/>
+        Start: [P]₀ = 2.0 M, [Q]₀ = 2.0 M, [R]₀ = 0, [S]₀ = 0 in a 1 L vessel.<br/>
+        At equilibrium: [S]<sub>eq</sub> = 0.80 M, [R]<sub>eq</sub> = 0.40 M.<br/>
+        Which statement is correct?<br/>
+        A. x = 2<br/>
+        B. Conversion of P is 60%<br/>
+        C. [P]<sub>eq</sub> = 0.6 \(molL^{-1}\)<br/>
+        D. [Q]<sub>eq</sub> = 0.2 \(molL^{-1}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr><th></th><th>[P]</th><th>[Q]</th><th>[R]</th><th>[S]</th></tr>
+        <tr><td>Initial conc/\(molL^{-1}\)</td><td>2.0</td><td>2.0</td><td>0</td><td>0</td></tr>
+        <tr><td>Change in conc/\(molL^{-1}\)</td><td>–3y</td><td>–y</td><td>+xy</td><td>+2y</td></tr>
+        <tr><td>Equilibrium conc/\(molL^{-1}\)</td>
+            <td>2.0 – 3y</td>
+            <td>2.0 – y</td>
+            <td>xy</td>
+            <td>2y</td>
+        </tr>
+        </table><br/>
+
+        Here we see [S]<sub>eq</sub> = 2y = 0.80 → y = 0.40.<br/>
+        Then [R]<sub>eq</sub> = xy = 0.40 → x = 1.<br/>
+        So x (the stoichiometric coefficient of R) = 1.<br/><br/>
+        [P]<sub>eq</sub> = 2.0 – 3(0.40) = \(0.8molL^{-1}\)<br/>
+        Change of P concentration = \(1.2molL^{-1}\)<br/>
+        Conversion of P = \(\frac{1.2}{2.0}\) = 60%.<br/><br/>
+
+        <b>Answer: B. Conversion of P is 60%</b><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>26. 2 NO₂<sub>(g)</sub> ⇌ 2 NO<sub>(g)</sub> + O₂<sub>(g)</sub></b><br/>
+        Start: 5 mol NO₂ in 2 L. At equilibrium O₂ = 1 mol total. Find K_c.<br/>
+        A. \(\dfrac{2^2\times1}{0.5^2}\)  
+        B. \(\dfrac{2^2\times1}{5^2}\)  
+        C. \(\dfrac{1^2\times0.5}{1.5^2}\)  
+        D. \(\dfrac{1^2\times0.5}{1.5^2}\)<br/><br/>
+
+        <b>Solution:</b><br/>
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th></th>
+            <th>[NO₂]</th>
+            <th>[NO]</th>
+            <th>[O₂]</th>
+        </tr>
+        <tr>
+            <td>Initial conc/\(molL^{-1}\)</td>
+            <td>2.50</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+        <tr>
+            <td>Change in conc/\(molL^{-1}\)</td>
+            <td>–2x</td>
+            <td>+2x</td>
+            <td>+x</td>
+        </tr>
+        <tr>
+            <td>Equilibrium conc/\(molL^{-1}\)</td>
+            <td>2.50 – 2x</td>
+            <td>0 + 2x</td>
+            <td>0 + x</td>
+        </tr>
+        </table><br/>
+
+        We know [O₂]ₑq = x = 0.50, so:<br/>
+        – 2x = –1.00 → [NO₂]ₑq = 2.50 – 1.00 = 1.50<br/>
+        2x = 1.00 → [NO]ₑq = 1.00<br/><br/>
+
+        Then:<br/>
+        \[
+        K_c = \frac{[NO]^2\,[O_2]}{[NO_2]^2}
+        = \frac{(1.00)^2 \times 0.50}{(1.50)^2}
+        \]
+        <b>Answer: C. \(\displaystyle \frac{1.0^2 \times 0.5}{1.5^2}\)</b><br/>
+
+        <hr style="border:none; height:2px; background:#303030;"><br/>
+
+        <b>27. When a reversible reaction at equilibrium shifts forward under new conditions, which are true?</b><br/>
+        I. Product yield increases  <br/>
+        II. Reactant concentrations decrease  <br/>
+        III. Conversion rate of reactants decreases  <br/>
+        IV. Forward rate > reverse rate  <br/>
+        A. I & II<br/>
+        B. I & IV<br/>
+        C. II & III<br/>
+        D. III & IV<br/><br/>
+
+        <b>Solution:</b><br/>
+        Shifting forward → more products (I), fewer reactants (II), the system momentarily has forward > reverse rate until new eq (IV true). Conversion rate speaking of fraction increases, not decreases—III false.<br/>
+        <b>Answer: B. I & IV</b><br/><br/>
+
+    </div>
+
+    <br/><br/><br/>
+</body>
+</html>
